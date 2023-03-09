@@ -1,0 +1,29 @@
+[0.008s] Invoking command in '/home/tjddus/min/minicar_controller/kbd_reader/build/kbd_reader': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/tjddus/min/minicar_controller/kbd_reader -DCMAKE_INSTALL_PREFIX=/home/tjddus/min/minicar_controller/kbd_reader/install/kbd_reader
+[0.016s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.029s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.112s] -- Found ament_cmake_auto: 0.9.9 (/opt/ros/foxy/share/ament_cmake_auto/cmake)
+[0.113s] -- Found rclcpp: 2.4.1 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.143s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.147s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.195s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[0.211s] -- Found FastRTPS: /opt/ros/foxy/include  
+[0.255s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.290s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.291s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.292s] -- Looking for pthread.h
+[0.347s] -- Looking for pthread.h - found
+[0.348s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.437s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[0.437s] -- Looking for pthread_create in pthreads
+[0.499s] -- Looking for pthread_create in pthreads - not found
+[0.500s] -- Looking for pthread_create in pthread
+[0.586s] -- Looking for pthread_create in pthread - found
+[0.587s] -- Found Threads: TRUE  
+[0.688s] CMake Error at CMakeLists.txt:19 (ament_auto_add_libray):
+[0.688s]   Unknown CMake command "ament_auto_add_libray".
+[0.688s] 
+[0.688s] 
+[0.688s] -- Configuring incomplete, errors occurred!
+[0.688s] See also "/home/tjddus/min/minicar_controller/kbd_reader/build/kbd_reader/CMakeFiles/CMakeOutput.log".
+[0.688s] See also "/home/tjddus/min/minicar_controller/kbd_reader/build/kbd_reader/CMakeFiles/CMakeError.log".
+[0.693s] Invoked command in '/home/tjddus/min/minicar_controller/kbd_reader/build/kbd_reader' returned '1': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/tjddus/min/minicar_controller/kbd_reader -DCMAKE_INSTALL_PREFIX=/home/tjddus/min/minicar_controller/kbd_reader/install/kbd_reader

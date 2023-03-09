@@ -4,7 +4,7 @@
 #include <signal.h>
 #include <termios.h>
 
-#include "rclcpp/rclcpp.h"
+#include "rclcpp/rclcpp.hpp"
 
 #include "string.h"
 #include "arpa/inet.h"
@@ -36,6 +36,6 @@ class KbdReader
 
     public:        
         KbdReader(std::shared_ptr<rclcpp::Node> nh, char* ip, char* port);
-        int keyLoop()
+        int keyLoop();
         void key_sender(char key);
-}
+};

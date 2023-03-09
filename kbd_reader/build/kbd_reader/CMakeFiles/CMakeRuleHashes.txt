@@ -1,0 +1,2 @@
+# Hashes of file build rules.
+09bde689576cc070d4c964f9c49f65de CMakeFiles/kbd_reader_uninstall

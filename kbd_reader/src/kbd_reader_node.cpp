@@ -2,7 +2,6 @@
 #include <iostream>
 #include "kbd_reader/kbd_reader.hpp"
 
-
 using namespace std;
 
 int main(int argc, char** argv)
@@ -15,7 +14,7 @@ int main(int argc, char** argv)
     cin >> port;
 
     rclcpp::init(argc,argv);
-    auto node = rclcpp::Node::make_shared("kbd_reader")
+    auto node = rclcpp::Node::make_shared("kbd_reader");
     KbdReader kbdReader(node, ip, port);
 
 }

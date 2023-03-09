@@ -5,7 +5,7 @@ KbdReader::KbdReader(std::shared_ptr<rclcpp::Node> nh, char* ip, char* port) : n
     //setting addr struct
     addr_vehicle = {};
 
-    memset(&addr_vehicle, 0, siseof(addr_vehicle));
+    memset(&addr_vehicle, 0, sizeof(addr_vehicle));
     addr_vehicle.sin_family = AF_INET;
     addr_vehicle.sin_addr.s_addr = inet_addr(ip);
     addr_vehicle.sin_port = htons(atoi(port));
@@ -30,8 +30,8 @@ KbdReader::KbdReader(std::shared_ptr<rclcpp::Node> nh, char* ip, char* port) : n
     //console reading setting
     //get the console in raw mode  
     kfd = 0;
-    tcgettatr(kfd, &cooked);
-    memcpy(&raw, &coocked, sizeof(struct termios));
+    tcgetattr(kfd, &cooked);
+    memcpy(&raw, &cooked, sizeof(struct termios));
     raw.c_lflag &=~ (ICANON | ECHO);
     // Setting a new line, then end of file                         
     raw.c_cc[VEOL] = 1;
@@ -48,7 +48,7 @@ int KbdReader::keyLoop()
     bool key_dirty;
 
     std::cout<<"Reading from keyboard"<<std::endl;
-    std::cout<,"-----------------------------"<<std::endl;
+    std::cout<<"-----------------------------"<<std::endl;
     std::cout<<"Use w a s d to move vehicle."<<std::endl;
 
     for(;;)
@@ -82,5 +82,6 @@ void KbdReader::key_sender(char key)
 {
     char w_buff[256];
     w_buff[0] = key;
-    int write_check = write(client_sock, w_buff,1)
+    int write_check = 0;
+    write_check = write(client_sock, w_buff,1);
 }

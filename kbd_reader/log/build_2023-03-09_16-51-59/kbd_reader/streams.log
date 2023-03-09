@@ -1,0 +1,11 @@
+[0.008s] Invoking command in '/home/tjddus/min/minicar_controller/kbd_reader/build/kbd_reader': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/tjddus/min/minicar_controller/kbd_reader/build/kbd_reader -- -j20 -l20
+[0.041s] [ 50%] Built target kbd_reader
+[0.062s] [ 75%] [32mBuilding CXX object CMakeFiles/kbd_reader_node.dir/src/kbd_reader_node.cpp.o[0m
+[0.674s] [01m[K/home/tjddus/min/minicar_controller/kbd_reader/src/kbd_reader_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[0.674s] [01m[K/home/tjddus/min/minicar_controller/kbd_reader/src/kbd_reader_node.cpp:18:5:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K;[m[K’ before ‘[01m[KKbdReader[m[K’
+[0.674s]    18 |     [01;31m[KKbdReader[m[K kbdReader(node, ip, port);
+[0.674s]       |     [01;31m[K^~~~~~~~~[m[K
+[0.852s] make[2]: *** [CMakeFiles/kbd_reader_node.dir/build.make:63: CMakeFiles/kbd_reader_node.dir/src/kbd_reader_node.cpp.o] Error 1
+[0.852s] make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/kbd_reader_node.dir/all] Error 2
+[0.852s] make: *** [Makefile:141: all] Error 2
+[0.855s] Invoked command in '/home/tjddus/min/minicar_controller/kbd_reader/build/kbd_reader' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/tjddus/min/minicar_controller/kbd_reader/build/kbd_reader -- -j20 -l20

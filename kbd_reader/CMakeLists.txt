@@ -8,14 +8,15 @@ endif()
 # find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(ament_cmake_auto REQUIRED)
-find_package(rclcpp_interfaces REQUIRED)
+find_package(rclcpp REQUIRED)
+find_package(rcl_interfaces REQUIRED)
 # uncomment the following section in order to fill in
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
 
 include_directories(include)
 
-ament_auto_add_libray(kbd_reader SHARED
+ament_auto_add_library(kbd_reader SHARED
   src/kbd_reader.cpp
 )
 
@@ -41,5 +42,5 @@ install(TARGETS
 install(TARGETS
   kbd_reader_node
   DESTINATION lib/${PROJECT_NAME})
-  
+
 ament_package()
