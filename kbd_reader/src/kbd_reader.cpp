@@ -80,5 +80,7 @@ int KbdReader::keyLoop()
 
 void KbdReader::key_sender(char key)
 {
-
+    char w_buff[256];
+    w_buff[0] = key;
+    int write_check = write(client_sock, w_buff,1)
 }
