@@ -34,8 +34,10 @@ class KbdReader
         struct termios cooked, raw;
         bool key_dirty;
 
+        char w_buff[256];
+
     public:        
         KbdReader(std::shared_ptr<rclcpp::Node> nh, char* ip, char* port);
         int keyLoop();
-        void key_sender(char key);
+        void key_sending(char key);
 };

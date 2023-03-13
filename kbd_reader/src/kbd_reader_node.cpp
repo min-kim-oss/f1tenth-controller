@@ -17,4 +17,8 @@ int main(int argc, char** argv)
     auto node = rclcpp::Node::make_shared("kbd_reader");
     KbdReader kbdReader(node, ip, port);
 
+    kbdReader.keyLoop();
+
+    rclcpp::shutdown();
+    return 0;
 }

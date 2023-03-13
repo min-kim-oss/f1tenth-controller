@@ -53,8 +53,8 @@ CMAKE_BINARY_DIR = /home/tjddus/min/minicar_controller/kbd_reader/build/kbd_read
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/kbd_reader_node.dir/all
-all: CMakeFiles/kbd_reader.dir/all
+all: CMakeFiles/KbdReader_node.dir/all
+all: CMakeFiles/KbdReader.dir/all
 
 .PHONY : all
 
@@ -64,66 +64,39 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/kbd_reader_node.dir/clean
-clean: CMakeFiles/kbd_reader.dir/clean
+clean: CMakeFiles/KbdReader_node.dir/clean
 clean: CMakeFiles/kbd_reader_uninstall.dir/clean
+clean: CMakeFiles/KbdReader.dir/clean
 clean: CMakeFiles/uninstall.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/kbd_reader_node.dir
+# Target rules for target CMakeFiles/KbdReader_node.dir
 
 # All Build rule for target.
-CMakeFiles/kbd_reader_node.dir/all: CMakeFiles/kbd_reader.dir/all
-	$(MAKE) -f CMakeFiles/kbd_reader_node.dir/build.make CMakeFiles/kbd_reader_node.dir/depend
-	$(MAKE) -f CMakeFiles/kbd_reader_node.dir/build.make CMakeFiles/kbd_reader_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tjddus/min/minicar_controller/kbd_reader/build/kbd_reader/CMakeFiles --progress-num=3,4 "Built target kbd_reader_node"
-.PHONY : CMakeFiles/kbd_reader_node.dir/all
+CMakeFiles/KbdReader_node.dir/all: CMakeFiles/KbdReader.dir/all
+	$(MAKE) -f CMakeFiles/KbdReader_node.dir/build.make CMakeFiles/KbdReader_node.dir/depend
+	$(MAKE) -f CMakeFiles/KbdReader_node.dir/build.make CMakeFiles/KbdReader_node.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tjddus/min/minicar_controller/kbd_reader/build/kbd_reader/CMakeFiles --progress-num=3,4 "Built target KbdReader_node"
+.PHONY : CMakeFiles/KbdReader_node.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/kbd_reader_node.dir/rule: cmake_check_build_system
+CMakeFiles/KbdReader_node.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/tjddus/min/minicar_controller/kbd_reader/build/kbd_reader/CMakeFiles 4
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/kbd_reader_node.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/KbdReader_node.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/tjddus/min/minicar_controller/kbd_reader/build/kbd_reader/CMakeFiles 0
-.PHONY : CMakeFiles/kbd_reader_node.dir/rule
+.PHONY : CMakeFiles/KbdReader_node.dir/rule
 
 # Convenience name for target.
-kbd_reader_node: CMakeFiles/kbd_reader_node.dir/rule
+KbdReader_node: CMakeFiles/KbdReader_node.dir/rule
 
-.PHONY : kbd_reader_node
-
-# clean rule for target.
-CMakeFiles/kbd_reader_node.dir/clean:
-	$(MAKE) -f CMakeFiles/kbd_reader_node.dir/build.make CMakeFiles/kbd_reader_node.dir/clean
-.PHONY : CMakeFiles/kbd_reader_node.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/kbd_reader.dir
-
-# All Build rule for target.
-CMakeFiles/kbd_reader.dir/all:
-	$(MAKE) -f CMakeFiles/kbd_reader.dir/build.make CMakeFiles/kbd_reader.dir/depend
-	$(MAKE) -f CMakeFiles/kbd_reader.dir/build.make CMakeFiles/kbd_reader.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tjddus/min/minicar_controller/kbd_reader/build/kbd_reader/CMakeFiles --progress-num=1,2 "Built target kbd_reader"
-.PHONY : CMakeFiles/kbd_reader.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/kbd_reader.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tjddus/min/minicar_controller/kbd_reader/build/kbd_reader/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/kbd_reader.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tjddus/min/minicar_controller/kbd_reader/build/kbd_reader/CMakeFiles 0
-.PHONY : CMakeFiles/kbd_reader.dir/rule
-
-# Convenience name for target.
-kbd_reader: CMakeFiles/kbd_reader.dir/rule
-
-.PHONY : kbd_reader
+.PHONY : KbdReader_node
 
 # clean rule for target.
-CMakeFiles/kbd_reader.dir/clean:
-	$(MAKE) -f CMakeFiles/kbd_reader.dir/build.make CMakeFiles/kbd_reader.dir/clean
-.PHONY : CMakeFiles/kbd_reader.dir/clean
+CMakeFiles/KbdReader_node.dir/clean:
+	$(MAKE) -f CMakeFiles/KbdReader_node.dir/build.make CMakeFiles/KbdReader_node.dir/clean
+.PHONY : CMakeFiles/KbdReader_node.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/kbd_reader_uninstall.dir
@@ -151,6 +124,33 @@ kbd_reader_uninstall: CMakeFiles/kbd_reader_uninstall.dir/rule
 CMakeFiles/kbd_reader_uninstall.dir/clean:
 	$(MAKE) -f CMakeFiles/kbd_reader_uninstall.dir/build.make CMakeFiles/kbd_reader_uninstall.dir/clean
 .PHONY : CMakeFiles/kbd_reader_uninstall.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/KbdReader.dir
+
+# All Build rule for target.
+CMakeFiles/KbdReader.dir/all:
+	$(MAKE) -f CMakeFiles/KbdReader.dir/build.make CMakeFiles/KbdReader.dir/depend
+	$(MAKE) -f CMakeFiles/KbdReader.dir/build.make CMakeFiles/KbdReader.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tjddus/min/minicar_controller/kbd_reader/build/kbd_reader/CMakeFiles --progress-num=1,2 "Built target KbdReader"
+.PHONY : CMakeFiles/KbdReader.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/KbdReader.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tjddus/min/minicar_controller/kbd_reader/build/kbd_reader/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/KbdReader.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tjddus/min/minicar_controller/kbd_reader/build/kbd_reader/CMakeFiles 0
+.PHONY : CMakeFiles/KbdReader.dir/rule
+
+# Convenience name for target.
+KbdReader: CMakeFiles/KbdReader.dir/rule
+
+.PHONY : KbdReader
+
+# clean rule for target.
+CMakeFiles/KbdReader.dir/clean:
+	$(MAKE) -f CMakeFiles/KbdReader.dir/build.make CMakeFiles/KbdReader.dir/clean
+.PHONY : CMakeFiles/KbdReader.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/uninstall.dir

@@ -1,0 +1,18 @@
+[35m[1mScanning dependencies of target VescController[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/VescController.dir/src/vesc_controller.cpp.o[0m
+[01m[K/home/tjddus/min/minicar_controller/vesc_controller/src/vesc_controller.cpp:[m[K In member function ‘[01m[Kvoid VescController::ReceiveKey()[m[K’:
+[01m[K/home/tjddus/min/minicar_controller/vesc_controller/src/vesc_controller.cpp:62:18:[m[K [01;35m[Kwarning: [m[Kvalue computed is not used [[01;35m[K-Wunused-value[m[K]
+   62 |         [01;35m[Kread_chk == read(client_sock, r_buff, 1)[m[K;
+      |         [01;35m[K~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[ 50%] [32m[1mLinking CXX shared library libVescController.so[0m
+[ 50%] Built target VescController
+[35m[1mScanning dependencies of target VescController_node[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/VescController_node.dir/src/vesc_controller_node.cpp.o[0m
+[01m[K/home/tjddus/min/minicar_controller/vesc_controller/src/vesc_controller_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/tjddus/min/minicar_controller/vesc_controller/src/vesc_controller_node.cpp:10:17:[m[K [01;31m[Kerror: [m[K‘[01m[KNodeOption[m[K’ is not a member of ‘[01m[Krclcpp[m[K’; did you mean ‘[01m[KNodeOptions[m[K’?
+   10 |         rclcpp::[01;31m[KNodeOption[m[K());
+      |                 [01;31m[K^~~~~~~~~~[m[K
+      |                 [32m[KNodeOptions[m[K
+make[2]: *** [CMakeFiles/VescController_node.dir/build.make:63: CMakeFiles/VescController_node.dir/src/vesc_controller_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/VescController_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -1,0 +1,2 @@
+Invoking command in '/home/tjddus/min/minicar_controller/vesc_controller/build/vesc_controller': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/tjddus/min/minicar_controller/vesc_controller/build/vesc_controller -- -j20 -l20
+Invoked command in '/home/tjddus/min/minicar_controller/vesc_controller/build/vesc_controller' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/tjddus/min/minicar_controller/vesc_controller/build/vesc_controller -- -j20 -l20

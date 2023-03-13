@@ -72,15 +72,15 @@ int KbdReader::keyLoop()
 
         if(key_dirty == true)
         {
-            key_sender(c);
+            key_sending(c);
         }
     }
 
 }
 
-void KbdReader::key_sender(char key)
+void KbdReader::key_sending(char key)
 {
-    char w_buff[256];
+    memset(w_buff, 0 ,256);
     w_buff[0] = key;
     int write_check = 0;
     write_check = write(client_sock, w_buff,1);

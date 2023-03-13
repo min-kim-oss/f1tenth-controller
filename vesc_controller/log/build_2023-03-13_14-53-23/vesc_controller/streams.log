@@ -1,0 +1,20 @@
+[0.008s] Invoking command in '/home/tjddus/min/minicar_controller/vesc_controller/build/vesc_controller': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/tjddus/min/minicar_controller/vesc_controller -DCMAKE_INSTALL_PREFIX=/home/tjddus/min/minicar_controller/vesc_controller/install/vesc_controller
+[0.016s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.029s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.120s] -- Found ament_cmake_auto: 0.9.9 (/opt/ros/foxy/share/ament_cmake_auto/cmake)
+[0.120s] -- Found rclcpp: 2.4.1 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.139s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.141s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.202s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.228s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.229s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.308s] CMake Error at /opt/ros/foxy/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:42 (message):
+[0.308s]   ament_target_dependencies() the first argument must be a valid target name
+[0.308s] Call Stack (most recent call first):
+[0.308s]   CMakeLists.txt:36 (ament_target_dependencies)
+[0.308s] 
+[0.308s] 
+[0.308s] -- Configuring incomplete, errors occurred!
+[0.308s] See also "/home/tjddus/min/minicar_controller/vesc_controller/build/vesc_controller/CMakeFiles/CMakeOutput.log".
+[0.309s] See also "/home/tjddus/min/minicar_controller/vesc_controller/build/vesc_controller/CMakeFiles/CMakeError.log".
+[0.313s] Invoked command in '/home/tjddus/min/minicar_controller/vesc_controller/build/vesc_controller' returned '1': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/tjddus/min/minicar_controller/vesc_controller -DCMAKE_INSTALL_PREFIX=/home/tjddus/min/minicar_controller/vesc_controller/install/vesc_controller

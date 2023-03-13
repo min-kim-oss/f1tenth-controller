@@ -68,18 +68,6 @@ install/strip/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -101,6 +89,18 @@ test:
 test/fast: test
 
 .PHONY : test/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
 
 # Special rule for the target install
 install: preinstall
@@ -168,30 +168,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named kbd_reader_node
+# Target rules for targets named KbdReader_node
 
 # Build rule for target.
-kbd_reader_node: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 kbd_reader_node
-.PHONY : kbd_reader_node
+KbdReader_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 KbdReader_node
+.PHONY : KbdReader_node
 
 # fast build rule for target.
-kbd_reader_node/fast:
-	$(MAKE) -f CMakeFiles/kbd_reader_node.dir/build.make CMakeFiles/kbd_reader_node.dir/build
-.PHONY : kbd_reader_node/fast
-
-#=============================================================================
-# Target rules for targets named kbd_reader
-
-# Build rule for target.
-kbd_reader: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 kbd_reader
-.PHONY : kbd_reader
-
-# fast build rule for target.
-kbd_reader/fast:
-	$(MAKE) -f CMakeFiles/kbd_reader.dir/build.make CMakeFiles/kbd_reader.dir/build
-.PHONY : kbd_reader/fast
+KbdReader_node/fast:
+	$(MAKE) -f CMakeFiles/KbdReader_node.dir/build.make CMakeFiles/KbdReader_node.dir/build
+.PHONY : KbdReader_node/fast
 
 #=============================================================================
 # Target rules for targets named kbd_reader_uninstall
@@ -205,6 +192,19 @@ kbd_reader_uninstall: cmake_check_build_system
 kbd_reader_uninstall/fast:
 	$(MAKE) -f CMakeFiles/kbd_reader_uninstall.dir/build.make CMakeFiles/kbd_reader_uninstall.dir/build
 .PHONY : kbd_reader_uninstall/fast
+
+#=============================================================================
+# Target rules for targets named KbdReader
+
+# Build rule for target.
+KbdReader: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 KbdReader
+.PHONY : KbdReader
+
+# fast build rule for target.
+KbdReader/fast:
+	$(MAKE) -f CMakeFiles/KbdReader.dir/build.make CMakeFiles/KbdReader.dir/build
+.PHONY : KbdReader/fast
 
 #=============================================================================
 # Target rules for targets named uninstall
@@ -225,7 +225,7 @@ src/kbd_reader.o: src/kbd_reader.cpp.o
 
 # target to build an object file
 src/kbd_reader.cpp.o:
-	$(MAKE) -f CMakeFiles/kbd_reader.dir/build.make CMakeFiles/kbd_reader.dir/src/kbd_reader.cpp.o
+	$(MAKE) -f CMakeFiles/KbdReader.dir/build.make CMakeFiles/KbdReader.dir/src/kbd_reader.cpp.o
 .PHONY : src/kbd_reader.cpp.o
 
 src/kbd_reader.i: src/kbd_reader.cpp.i
@@ -234,7 +234,7 @@ src/kbd_reader.i: src/kbd_reader.cpp.i
 
 # target to preprocess a source file
 src/kbd_reader.cpp.i:
-	$(MAKE) -f CMakeFiles/kbd_reader.dir/build.make CMakeFiles/kbd_reader.dir/src/kbd_reader.cpp.i
+	$(MAKE) -f CMakeFiles/KbdReader.dir/build.make CMakeFiles/KbdReader.dir/src/kbd_reader.cpp.i
 .PHONY : src/kbd_reader.cpp.i
 
 src/kbd_reader.s: src/kbd_reader.cpp.s
@@ -243,7 +243,7 @@ src/kbd_reader.s: src/kbd_reader.cpp.s
 
 # target to generate assembly for a file
 src/kbd_reader.cpp.s:
-	$(MAKE) -f CMakeFiles/kbd_reader.dir/build.make CMakeFiles/kbd_reader.dir/src/kbd_reader.cpp.s
+	$(MAKE) -f CMakeFiles/KbdReader.dir/build.make CMakeFiles/KbdReader.dir/src/kbd_reader.cpp.s
 .PHONY : src/kbd_reader.cpp.s
 
 src/kbd_reader_node.o: src/kbd_reader_node.cpp.o
@@ -252,7 +252,7 @@ src/kbd_reader_node.o: src/kbd_reader_node.cpp.o
 
 # target to build an object file
 src/kbd_reader_node.cpp.o:
-	$(MAKE) -f CMakeFiles/kbd_reader_node.dir/build.make CMakeFiles/kbd_reader_node.dir/src/kbd_reader_node.cpp.o
+	$(MAKE) -f CMakeFiles/KbdReader_node.dir/build.make CMakeFiles/KbdReader_node.dir/src/kbd_reader_node.cpp.o
 .PHONY : src/kbd_reader_node.cpp.o
 
 src/kbd_reader_node.i: src/kbd_reader_node.cpp.i
@@ -261,7 +261,7 @@ src/kbd_reader_node.i: src/kbd_reader_node.cpp.i
 
 # target to preprocess a source file
 src/kbd_reader_node.cpp.i:
-	$(MAKE) -f CMakeFiles/kbd_reader_node.dir/build.make CMakeFiles/kbd_reader_node.dir/src/kbd_reader_node.cpp.i
+	$(MAKE) -f CMakeFiles/KbdReader_node.dir/build.make CMakeFiles/KbdReader_node.dir/src/kbd_reader_node.cpp.i
 .PHONY : src/kbd_reader_node.cpp.i
 
 src/kbd_reader_node.s: src/kbd_reader_node.cpp.s
@@ -270,7 +270,7 @@ src/kbd_reader_node.s: src/kbd_reader_node.cpp.s
 
 # target to generate assembly for a file
 src/kbd_reader_node.cpp.s:
-	$(MAKE) -f CMakeFiles/kbd_reader_node.dir/build.make CMakeFiles/kbd_reader_node.dir/src/kbd_reader_node.cpp.s
+	$(MAKE) -f CMakeFiles/KbdReader_node.dir/build.make CMakeFiles/KbdReader_node.dir/src/kbd_reader_node.cpp.s
 .PHONY : src/kbd_reader_node.cpp.s
 
 # Help Target
@@ -280,15 +280,15 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... install/strip"
-	@echo "... install/local"
 	@echo "... edit_cache"
 	@echo "... test"
-	@echo "... kbd_reader_node"
-	@echo "... kbd_reader"
+	@echo "... install/local"
+	@echo "... KbdReader_node"
 	@echo "... install"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... kbd_reader_uninstall"
+	@echo "... KbdReader"
 	@echo "... uninstall"
 	@echo "... src/kbd_reader.o"
 	@echo "... src/kbd_reader.i"

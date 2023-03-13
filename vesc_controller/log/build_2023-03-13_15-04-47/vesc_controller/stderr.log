@@ -1,0 +1,29 @@
+[01m[K/home/tjddus/min/minicar_controller/vesc_controller/src/vesc_controller.cpp:[m[K In member function ‘[01m[Kvoid VescController::SocketSetting()[m[K’:
+[01m[K/home/tjddus/min/minicar_controller/vesc_controller/src/vesc_controller.cpp:19:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct sockaddr_in[m[K’ has no member named ‘[01m[Ksin[m[K’
+   19 |     addr_server.[01;31m[Ksin[m[K.family = AF_INET;
+      |                 [01;31m[K^~~[m[K
+[01m[K/home/tjddus/min/minicar_controller/vesc_controller/src/vesc_controller.cpp:20:35:[m[K [01;31m[Kerror: [m[K‘[01m[Khton[m[K’ was not declared in this scope; did you mean ‘[01m[Khtons[m[K’?
+   20 |     addr_server.sin_addr.s_addr = [01;31m[Khton[m[K(INADDR_ANY);
+      |                                   [01;31m[K^~~~[m[K
+      |                                   [32m[Khtons[m[K
+[01m[K/home/tjddus/min/minicar_controller/vesc_controller/src/vesc_controller.cpp:21:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct sockaddr_in[m[K’ has no member named ‘[01m[Ksin[m[K’
+   21 |     addr_server.[01;31m[Ksin[m[K.port = htons(atoi(port));
+      |                 [01;31m[K^~~[m[K
+[01m[K/home/tjddus/min/minicar_controller/vesc_controller/src/vesc_controller.cpp:31:51:[m[K [01;31m[Kerror: [m[K‘[01m[Ksizeif[m[K’ was not declared in this scope; did you mean ‘[01m[Ksize_t[m[K’?
+   31 |     if(bind(server_sock, (sockaddr*)&addr_server, [01;31m[Ksizeif[m[K(addr_server)) == -1){
+      |                                                   [01;31m[K^~~~~~[m[K
+      |                                                   [32m[Ksize_t[m[K
+[01m[K/home/tjddus/min/minicar_controller/vesc_controller/src/vesc_controller.cpp:45:46:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kclient_sock[m[K’
+   45 |     addr_client_len = sizeof(addr_client_len)
+      |                                              [01;31m[K^[m[K
+      |                                              [32m[K;[m[K
+   46 | 
+   47 |     [32m[Kclient_sock[m[K = accept(server_sock, (sockaddr*) &addr_client, &addr_client_len);
+      |     [32m[K~~~~~~~~~~~[m[K                               
+[01m[K/home/tjddus/min/minicar_controller/vesc_controller/src/vesc_controller.cpp:[m[K In member function ‘[01m[Kvoid VescController::ReceiveKey()[m[K’:
+[01m[K/home/tjddus/min/minicar_controller/vesc_controller/src/vesc_controller.cpp:62:18:[m[K [01;35m[Kwarning: [m[Kvalue computed is not used [[01;35m[K-Wunused-value[m[K]
+   62 |         [01;35m[Kread_chk == read(client_sock, r_buff, 1)[m[K;
+      |         [01;35m[K~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/VescController.dir/build.make:63: CMakeFiles/VescController.dir/src/vesc_controller.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/VescController.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -1,5 +1,5 @@
-/home/tjddus/min/minicar_controller/kbd_reader/install/kbd_reader/lib/kbd_reader/libkbd_reader.so
-/home/tjddus/min/minicar_controller/kbd_reader/install/kbd_reader/lib/kbd_reader/kbd_reader_node
+/home/tjddus/min/minicar_controller/kbd_reader/install/kbd_reader/lib/kbd_reader/libKbdReader.so
+/home/tjddus/min/minicar_controller/kbd_reader/install/kbd_reader/lib/kbd_reader/KbdReader_node
 /home/tjddus/min/minicar_controller/kbd_reader/install/kbd_reader/share/ament_index/resource_index/package_run_dependencies/kbd_reader
 /home/tjddus/min/minicar_controller/kbd_reader/install/kbd_reader/share/ament_index/resource_index/parent_prefix_path/kbd_reader
 /home/tjddus/min/minicar_controller/kbd_reader/install/kbd_reader/share/kbd_reader/environment/ament_prefix_path.sh

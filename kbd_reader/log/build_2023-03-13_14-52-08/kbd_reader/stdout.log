@@ -1,0 +1,40 @@
+-- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Found ament_cmake_auto: 0.9.9 (/opt/ros/foxy/share/ament_cmake_auto/cmake)
+-- Found rclcpp: 2.4.1 (/opt/ros/foxy/share/rclcpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/tjddus/min/minicar_controller/kbd_reader/build/kbd_reader
+[35m[1mScanning dependencies of target KbdReader[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/KbdReader.dir/src/kbd_reader.cpp.o[0m
+[ 50%] [32m[1mLinking CXX shared library libKbdReader.so[0m
+[ 50%] Built target KbdReader
+[35m[1mScanning dependencies of target KbdReader_node[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/KbdReader_node.dir/src/kbd_reader_node.cpp.o[0m
+[100%] [32m[1mLinking CXX executable KbdReader_node[0m
+[100%] Built target KbdReader_node
+-- Install configuration: ""
+-- Installing: /home/tjddus/min/minicar_controller/kbd_reader/install/kbd_reader/lib/kbd_reader/libKbdReader.so
+-- Set runtime path of "/home/tjddus/min/minicar_controller/kbd_reader/install/kbd_reader/lib/kbd_reader/libKbdReader.so" to ""
+-- Installing: /home/tjddus/min/minicar_controller/kbd_reader/install/kbd_reader/lib/kbd_reader/KbdReader_node
+-- Set runtime path of "/home/tjddus/min/minicar_controller/kbd_reader/install/kbd_reader/lib/kbd_reader/KbdReader_node" to ""
+-- Up-to-date: /home/tjddus/min/minicar_controller/kbd_reader/install/kbd_reader/share/ament_index/resource_index/package_run_dependencies/kbd_reader
+-- Up-to-date: /home/tjddus/min/minicar_controller/kbd_reader/install/kbd_reader/share/ament_index/resource_index/parent_prefix_path/kbd_reader
+-- Up-to-date: /home/tjddus/min/minicar_controller/kbd_reader/install/kbd_reader/share/kbd_reader/environment/ament_prefix_path.sh
+-- Installing: /home/tjddus/min/minicar_controller/kbd_reader/install/kbd_reader/share/kbd_reader/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/tjddus/min/minicar_controller/kbd_reader/install/kbd_reader/share/kbd_reader/environment/path.sh
+-- Installing: /home/tjddus/min/minicar_controller/kbd_reader/install/kbd_reader/share/kbd_reader/environment/path.dsv
+-- Up-to-date: /home/tjddus/min/minicar_controller/kbd_reader/install/kbd_reader/share/kbd_reader/local_setup.bash
+-- Up-to-date: /home/tjddus/min/minicar_controller/kbd_reader/install/kbd_reader/share/kbd_reader/local_setup.sh
+-- Up-to-date: /home/tjddus/min/minicar_controller/kbd_reader/install/kbd_reader/share/kbd_reader/local_setup.zsh
+-- Installing: /home/tjddus/min/minicar_controller/kbd_reader/install/kbd_reader/share/kbd_reader/local_setup.dsv
+-- Installing: /home/tjddus/min/minicar_controller/kbd_reader/install/kbd_reader/share/kbd_reader/package.dsv
+-- Up-to-date: /home/tjddus/min/minicar_controller/kbd_reader/install/kbd_reader/share/ament_index/resource_index/packages/kbd_reader
+-- Up-to-date: /home/tjddus/min/minicar_controller/kbd_reader/install/kbd_reader/share/kbd_reader/cmake/kbd_readerConfig.cmake
+-- Up-to-date: /home/tjddus/min/minicar_controller/kbd_reader/install/kbd_reader/share/kbd_reader/cmake/kbd_readerConfig-version.cmake
+-- Up-to-date: /home/tjddus/min/minicar_controller/kbd_reader/install/kbd_reader/share/kbd_reader/package.xml

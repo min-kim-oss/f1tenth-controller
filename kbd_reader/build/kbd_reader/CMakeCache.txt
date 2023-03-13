@@ -247,6 +247,9 @@ FastRTPS_LIBRARY_DEBUG:FILEPATH=FastRTPS_LIBRARY_DEBUG-NOTFOUND
 //Path to a library.
 FastRTPS_LIBRARY_RELEASE:FILEPATH=/opt/ros/foxy/lib/libfastrtps.so
 
+//Dependencies for the target
+KbdReader_LIB_DEPENDS:STATIC=general;rclcpp::rclcpp;general;rcl_interfaces::rcl_interfaces__rosidl_generator_c;general;rcl_interfaces::rcl_interfaces__rosidl_typesupport_introspection_c;general;rcl_interfaces::rcl_interfaces__rosidl_typesupport_c;general;rcl_interfaces::rcl_interfaces__rosidl_typesupport_introspection_cpp;general;rcl_interfaces::rcl_interfaces__rosidl_typesupport_cpp;general;std_msgs::std_msgs__rosidl_generator_c;general;std_msgs::std_msgs__rosidl_typesupport_introspection_c;general;std_msgs::std_msgs__rosidl_typesupport_c;general;std_msgs::std_msgs__rosidl_typesupport_introspection_cpp;general;std_msgs::std_msgs__rosidl_typesupport_cpp;
+
 //Path to a library.
 OPENSSL_CRYPTO_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libcrypto.so
 
