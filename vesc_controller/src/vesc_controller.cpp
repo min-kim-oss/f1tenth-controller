@@ -6,7 +6,7 @@ VescController::VescController(const rclcpp::NodeOptions & options)
     //setting vesc parameter
     max_rsteer_arg = 1;
     max_lsteer_arg = -1;
-    max_accel_arg = 1000;
+    max_accel_arg = 3000;
     max_brake_arg = 200000;
 
     max_hit_count = 150;
@@ -37,6 +37,14 @@ VescController::VescController(const rclcpp::NodeOptions & options)
 
     addr_server = {};
     addr_client = {};
+
+    std::thread t1(&VescController::SocketSetter, this);
+    t1.detach();
+}
+
+
+void VescController::SocketSetter()
+{
     while(true){
         SocketSetting();
         ReceiveKey();
@@ -45,9 +53,9 @@ VescController::VescController(const rclcpp::NodeOptions & options)
 
 void VescController::SocketSetting()
 {
-    char port[6];
-    std::cout << "write port for connection : ";
-    std::cin >> port;
+    char port[6] = "9000";
+    //std::cout << "write port for connection : ";
+    //std::cin >> port;
 
     memset(&addr_server, 0 , sizeof(addr_server));
     addr_server.sin_family = AF_INET;
@@ -105,7 +113,7 @@ void VescController::ReceiveKey()
         r_key = r_buff[0];
         std::cout<<"received key : "<< r_key <<std::endl;
 
-        this.keyHandler(r_key);
+        keyHandler(r_key);
     }
 }
 
@@ -136,12 +144,12 @@ void VescController::keyHandler(char r_key){
             }
             break;
     }
-    cmd_creator();
+    cmd_creator(accel_hitCount, steer_hitCount, brake_hitCount);
 }
 
 void VescController::timerCallBack()
 {
-    this.hitRecoverer()
+    hitRecoverer();
 }
 
 void VescController::hitRecoverer()
@@ -175,28 +183,30 @@ void VescController::hitRecoverer()
     cmd_creator(accel_hitCount, steer_hitCount, brake_hitCount);
 }
 
-void cmd_creator(int accel_hitCount, int steer_hitCount, int brake_hitCount)
+void VescController::cmd_creator(int accel_hitCount, int steer_hitCount, int brake_hitCount)
 {
     cur_accel_arg = max_accel_arg * ((float)accel_hitCount / max_hit_count);
-    cur_steer_arg = max_rsteer_arg * ((float)steer_hitCount / max_hit_count);
+    cur_steer_arg = 0.5 + 0.5 * ((float)steer_hitCount / max_hit_count);
     cur_brake_arg = max_brake_arg * ((float)brake_hitCount / max_hit_count);
+    std::cout<<"cur accel : "<< cur_accel_arg <<std::endl;
+    std::cout<<"cur steer : "<< cur_steer_arg <<std::endl;
+    std::cout<<"cur brake : "<< cur_brake_arg <<std::endl;
 
     cmd_publisher(cur_accel_arg, cur_steer_arg, cur_brake_arg);
 }
 
-void cmd_publisher(int cur_accel_arg, int cur_steer_arg, int cur_brake_arg)
+void VescController::cmd_publisher(float cur_accel_arg, float cur_steer_arg, float cur_brake_arg)
 {
-    std::msg::Float64 accel_msg;
-    std::msg::Float64 steer_msg;
-    std::msg::Float64 brake_msg;
+    std_msgs::msg::Float64 accel_msg;
+    std_msgs::msg::Float64 steer_msg;
+    std_msgs::msg::Float64 brake_msg;
     accel_msg.data = cur_accel_arg;
     steer_msg.data = cur_steer_arg;
     brake_msg.data = cur_brake_arg;
 
-    accel_pub->publish(accel_msg);
-    steer_pub->publish(steer_msg);
+    accel_pub_->publish(accel_msg);
+    steer_pub_->publish(steer_msg);
     if(cur_brake_arg != 0){
-        brake_pub->publish(brake_msg);
-    }
-    
+        brake_pub_->publish(brake_msg);
+    }   
 }

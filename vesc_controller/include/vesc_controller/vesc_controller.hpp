@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <memory.h>
 #include <unistd.h>
+#include <thread>
 
 #include "rclcpp/rclcpp.hpp"
 #include <std_msgs/msg/float64.hpp>
@@ -54,15 +55,17 @@ class VescController : public rclcpp::Node
         int brake_hitCount;
 
         //for ROS services
-        rclcpp::Publisher<Float>::SharedPtr steer_pub_;
-        rclcpp::Publisher<Float>::SharedPtr accel_pub_;
-        rclcpp::Publisher<Float>::SharedPtr bracke_pub_;
+        rclcpp::TimerBase::SharedPtr timer_control_;
+        rclcpp::Publisher<std_msgs::msg::Float64>::SharedPtr steer_pub_;
+        rclcpp::Publisher<std_msgs::msg::Float64>::SharedPtr accel_pub_;
+        rclcpp::Publisher<std_msgs::msg::Float64>::SharedPtr brake_pub_;
 
 
     public:
         VescController(const rclcpp::NodeOptions &);
-        ~VescController();
-        
+        //~VescController();
+
+        void SocketSetter();
         void SocketSetting();
         void ReceiveKey();
         void keyHandler(char r_key);
@@ -70,6 +73,6 @@ class VescController : public rclcpp::Node
         void timerCallBack();
         void hitRecoverer();
         void cmd_creator(int accel_hitCount, int steer_hitCount, int brake_hitCount);
-        void cmd_publisher(int cur_accel_arg, int cur_steer_arg, int cur_brake_arg);
+        void cmd_publisher(float cur_accel_arg, float cur_steer_arg, float cur_brake_arg);
 
 };

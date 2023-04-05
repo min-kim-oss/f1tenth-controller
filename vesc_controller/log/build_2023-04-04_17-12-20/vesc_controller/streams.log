@@ -1,0 +1,24 @@
+[0.010s] Invoking command in '/home/tjddus/min/minicar_controller/vesc_controller/build/vesc_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/tjddus/min/minicar_controller/vesc_controller/build/vesc_controller -- -j20 -l20
+[0.053s] [ 50%] Built target VescController
+[0.086s] [100%] Built target VescController_node
+[0.103s] Invoked command in '/home/tjddus/min/minicar_controller/vesc_controller/build/vesc_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/tjddus/min/minicar_controller/vesc_controller/build/vesc_controller -- -j20 -l20
+[0.137s] Invoking command in '/home/tjddus/min/minicar_controller/vesc_controller/build/vesc_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/tjddus/min/minicar_controller/vesc_controller/build/vesc_controller
+[0.143s] -- Install configuration: ""
+[0.143s] -- Up-to-date: /home/tjddus/min/minicar_controller/vesc_controller/install/vesc_controller/lib/vesc_controller/libVescController.so
+[0.143s] -- Up-to-date: /home/tjddus/min/minicar_controller/vesc_controller/install/vesc_controller/lib/vesc_controller/VescController_node
+[0.143s] -- Up-to-date: /home/tjddus/min/minicar_controller/vesc_controller/install/vesc_controller/share/ament_index/resource_index/package_run_dependencies/vesc_controller
+[0.144s] -- Up-to-date: /home/tjddus/min/minicar_controller/vesc_controller/install/vesc_controller/share/ament_index/resource_index/parent_prefix_path/vesc_controller
+[0.144s] -- Up-to-date: /home/tjddus/min/minicar_controller/vesc_controller/install/vesc_controller/share/vesc_controller/environment/ament_prefix_path.sh
+[0.144s] -- Up-to-date: /home/tjddus/min/minicar_controller/vesc_controller/install/vesc_controller/share/vesc_controller/environment/ament_prefix_path.dsv
+[0.144s] -- Up-to-date: /home/tjddus/min/minicar_controller/vesc_controller/install/vesc_controller/share/vesc_controller/environment/path.sh
+[0.144s] -- Up-to-date: /home/tjddus/min/minicar_controller/vesc_controller/install/vesc_controller/share/vesc_controller/environment/path.dsv
+[0.144s] -- Up-to-date: /home/tjddus/min/minicar_controller/vesc_controller/install/vesc_controller/share/vesc_controller/local_setup.bash
+[0.144s] -- Up-to-date: /home/tjddus/min/minicar_controller/vesc_controller/install/vesc_controller/share/vesc_controller/local_setup.sh
+[0.144s] -- Up-to-date: /home/tjddus/min/minicar_controller/vesc_controller/install/vesc_controller/share/vesc_controller/local_setup.zsh
+[0.144s] -- Up-to-date: /home/tjddus/min/minicar_controller/vesc_controller/install/vesc_controller/share/vesc_controller/local_setup.dsv
+[0.144s] -- Installing: /home/tjddus/min/minicar_controller/vesc_controller/install/vesc_controller/share/vesc_controller/package.dsv
+[0.144s] -- Up-to-date: /home/tjddus/min/minicar_controller/vesc_controller/install/vesc_controller/share/ament_index/resource_index/packages/vesc_controller
+[0.144s] -- Up-to-date: /home/tjddus/min/minicar_controller/vesc_controller/install/vesc_controller/share/vesc_controller/cmake/vesc_controllerConfig.cmake
+[0.144s] -- Up-to-date: /home/tjddus/min/minicar_controller/vesc_controller/install/vesc_controller/share/vesc_controller/cmake/vesc_controllerConfig-version.cmake
+[0.144s] -- Up-to-date: /home/tjddus/min/minicar_controller/vesc_controller/install/vesc_controller/share/vesc_controller/package.xml
+[0.145s] Invoked command in '/home/tjddus/min/minicar_controller/vesc_controller/build/vesc_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/tjddus/min/minicar_controller/vesc_controller/build/vesc_controller

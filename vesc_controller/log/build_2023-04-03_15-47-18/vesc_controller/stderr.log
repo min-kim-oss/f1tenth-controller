@@ -1,0 +1,11 @@
+[01m[K/home/tjddus/min/minicar_controller/vesc_controller/src/vesc_controller.cpp:[m[K In member function ‘[01m[Kvoid VescController::SocketSetting()[m[K’:
+[01m[K/home/tjddus/min/minicar_controller/vesc_controller/src/vesc_controller.cpp:60:12:[m[K [01;31m[Kerror: [m[Kincompatible types in assignment of ‘[01m[Kconst char [5][m[K’ to ‘[01m[Kchar [6][m[K’
+   60 |     port = [01;31m[K"9000"[m[K
+      |            [01;31m[K^~~~~~[m[K
+[01m[K/home/tjddus/min/minicar_controller/vesc_controller/src/vesc_controller.cpp:[m[K In member function ‘[01m[Kvoid VescController::ReceiveKey()[m[K’:
+[01m[K/home/tjddus/min/minicar_controller/vesc_controller/src/vesc_controller.cpp:106:18:[m[K [01;35m[Kwarning: [m[Kvalue computed is not used [[01;35m[K-Wunused-value[m[K]
+  106 |         [01;35m[Kread_chk == read(client_sock, r_buff, 1)[m[K;
+      |         [01;35m[K~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/VescController.dir/build.make:63: CMakeFiles/VescController.dir/src/vesc_controller.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/VescController.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

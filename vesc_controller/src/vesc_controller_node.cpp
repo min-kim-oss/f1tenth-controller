@@ -8,6 +8,7 @@ int main(int argc, char** argv)
     
     auto node = std::make_shared<VescController>(
         rclcpp::NodeOptions());
+
     rclcpp::spin(node);
 
     rclcpp::shutdown();

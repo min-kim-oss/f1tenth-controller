@@ -1,0 +1,89 @@
+[0.009s] Invoking command in '/home/tjddus/min/minicar_controller/vesc_controller/build/vesc_controller': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/tjddus/min/minicar_controller/vesc_controller/build/vesc_controller -- -j20 -l20
+[0.032s] [35m[1mScanning dependencies of target VescController[0m
+[0.050s] [ 25%] [32mBuilding CXX object CMakeFiles/VescController.dir/src/vesc_controller.cpp.o[0m
+[0.834s] [01m[K/home/tjddus/min/minicar_controller/vesc_controller/src/vesc_controller.cpp:[m[K In constructor ‘[01m[KVescController::VescController(const rclcpp::NodeOptions&)[m[K’:
+[0.834s] [01m[K/home/tjddus/min/minicar_controller/vesc_controller/src/vesc_controller.cpp:41:20:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[Kvoid VescController::SocketSetter()[m[K’
+[0.834s]    41 |     std::thread t1([01;31m[KSocketSetter[m[K);
+[0.834s]       |                    [01;31m[K^~~~~~~~~~~~[m[K
+[0.834s] In file included from [01m[K/home/tjddus/min/minicar_controller/vesc_controller/src/vesc_controller.cpp:1[m[K:
+[0.834s] [01m[K/home/tjddus/min/minicar_controller/vesc_controller/include/vesc_controller/vesc_controller.hpp:68:14:[m[K [01;36m[Knote: [m[Kdeclared here
+[0.834s]    68 |         void [01;36m[KSocketSetter[m[K();
+[0.834s]       |              [01;36m[K^~~~~~~~~~~~[m[K
+[0.835s] [01m[K/home/tjddus/min/minicar_controller/vesc_controller/src/vesc_controller.cpp:[m[K In member function ‘[01m[Kvoid VescController::ReceiveKey()[m[K’:
+[0.835s] [01m[K/home/tjddus/min/minicar_controller/vesc_controller/src/vesc_controller.cpp:104:18:[m[K [01;35m[Kwarning: [m[Kvalue computed is not used [[01;35m[K-Wunused-value[m[K]
+[0.835s]   104 |         [01;35m[Kread_chk == read(client_sock, r_buff, 1)[m[K;
+[0.835s]       |         [01;35m[K~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.835s] [01m[K/home/tjddus/min/minicar_controller/vesc_controller/src/vesc_controller.cpp:116:14:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[KkeyHandler[m[K’ in ‘[01m[K(VescController*)this[m[K’, which is of pointer type ‘[01m[KVescController*[m[K’ (maybe you meant to use ‘[01m[K->[m[K’ ?)
+[0.835s]   116 |         this.[01;31m[KkeyHandler[m[K(r_key);
+[0.835s]       |              [01;31m[K^~~~~~~~~~[m[K
+[0.835s] [01m[K/home/tjddus/min/minicar_controller/vesc_controller/src/vesc_controller.cpp:[m[K In member function ‘[01m[Kvoid VescController::keyHandler(char)[m[K’:
+[0.836s] [01m[K/home/tjddus/min/minicar_controller/vesc_controller/src/vesc_controller.cpp:147:17:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KVescController::cmd_creator()[m[K’
+[0.836s]   147 |     cmd_creator([01;31m[K)[m[K;
+[0.836s]       |                 [01;31m[K^[m[K
+[0.836s] In file included from [01m[K/home/tjddus/min/minicar_controller/vesc_controller/src/vesc_controller.cpp:1[m[K:
+[0.836s] [01m[K/home/tjddus/min/minicar_controller/vesc_controller/include/vesc_controller/vesc_controller.hpp:75:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid VescController::cmd_creator(int, int, int)[m[K’
+[0.836s]    75 |         void [01;36m[Kcmd_creator[m[K(int accel_hitCount, int steer_hitCount, int brake_hitCount);
+[0.836s]       |              [01;36m[K^~~~~~~~~~~[m[K
+[0.836s] [01m[K/home/tjddus/min/minicar_controller/vesc_controller/include/vesc_controller/vesc_controller.hpp:75:14:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 0 provided
+[0.836s] [01m[K/home/tjddus/min/minicar_controller/vesc_controller/src/vesc_controller.cpp:[m[K In member function ‘[01m[Kvoid VescController::timerCallBack()[m[K’:
+[0.836s] [01m[K/home/tjddus/min/minicar_controller/vesc_controller/src/vesc_controller.cpp:152:10:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[KhitRecoverer[m[K’ in ‘[01m[K(VescController*)this[m[K’, which is of pointer type ‘[01m[KVescController*[m[K’ (maybe you meant to use ‘[01m[K->[m[K’ ?)
+[0.836s]   152 |     this.[01;31m[KhitRecoverer[m[K()
+[0.836s]       |          [01;31m[K^~~~~~~~~~~~[m[K
+[0.840s] [01m[K/home/tjddus/min/minicar_controller/vesc_controller/src/vesc_controller.cpp:[m[K In function ‘[01m[Kvoid cmd_creator(int, int, int)[m[K’:
+[0.840s] [01m[K/home/tjddus/min/minicar_controller/vesc_controller/src/vesc_controller.cpp:188:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcur_accel_arg[m[K’ was not declared in this scope
+[0.840s]   188 |     [01;31m[Kcur_accel_arg[m[K = max_accel_arg * ((float)accel_hitCount / max_hit_count);
+[0.840s]       |     [01;31m[K^~~~~~~~~~~~~[m[K
+[0.842s] [01m[K/home/tjddus/min/minicar_controller/vesc_controller/src/vesc_controller.cpp:188:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kmax_accel_arg[m[K’ was not declared in this scope
+[0.842s]   188 |     cur_accel_arg = [01;31m[Kmax_accel_arg[m[K * ((float)accel_hitCount / max_hit_count);
+[0.842s]       |                     [01;31m[K^~~~~~~~~~~~~[m[K
+[0.843s] [01m[K/home/tjddus/min/minicar_controller/vesc_controller/src/vesc_controller.cpp:188:62:[m[K [01;31m[Kerror: [m[K‘[01m[Kmax_hit_count[m[K’ was not declared in this scope
+[0.843s]   188 |     cur_accel_arg = max_accel_arg * ((float)accel_hitCount / [01;31m[Kmax_hit_count[m[K);
+[0.843s]       |                                                              [01;31m[K^~~~~~~~~~~~~[m[K
+[0.845s] [01m[K/home/tjddus/min/minicar_controller/vesc_controller/src/vesc_controller.cpp:189:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcur_steer_arg[m[K’ was not declared in this scope
+[0.845s]   189 |     [01;31m[Kcur_steer_arg[m[K = max_rsteer_arg * ((float)steer_hitCount / max_hit_count);
+[0.845s]       |     [01;31m[K^~~~~~~~~~~~~[m[K
+[0.846s] [01m[K/home/tjddus/min/minicar_controller/vesc_controller/src/vesc_controller.cpp:189:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kmax_rsteer_arg[m[K’ was not declared in this scope
+[0.846s]   189 |     cur_steer_arg = [01;31m[Kmax_rsteer_arg[m[K * ((float)steer_hitCount / max_hit_count);
+[0.846s]       |                     [01;31m[K^~~~~~~~~~~~~~[m[K
+[0.847s] [01m[K/home/tjddus/min/minicar_controller/vesc_controller/src/vesc_controller.cpp:190:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcur_brake_arg[m[K’ was not declared in this scope
+[0.847s]   190 |     [01;31m[Kcur_brake_arg[m[K = max_brake_arg * ((float)brake_hitCount / max_hit_count);
+[0.847s]       |     [01;31m[K^~~~~~~~~~~~~[m[K
+[0.848s] [01m[K/home/tjddus/min/minicar_controller/vesc_controller/src/vesc_controller.cpp:190:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kmax_brake_arg[m[K’ was not declared in this scope
+[0.848s]   190 |     cur_brake_arg = [01;31m[Kmax_brake_arg[m[K * ((float)brake_hitCount / max_hit_count);
+[0.848s]       |                     [01;31m[K^~~~~~~~~~~~~[m[K
+[0.849s] [01m[K/home/tjddus/min/minicar_controller/vesc_controller/src/vesc_controller.cpp:192:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcmd_publisher[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_publish[m[K’?
+[0.849s]   192 |     [01;31m[Kcmd_publisher[m[K(cur_accel_arg, cur_steer_arg, cur_brake_arg);
+[0.849s]       |     [01;31m[K^~~~~~~~~~~~~[m[K
+[0.849s]       |     [32m[Krmw_publish[m[K
+[0.849s] [01m[K/home/tjddus/min/minicar_controller/vesc_controller/src/vesc_controller.cpp:[m[K In function ‘[01m[Kvoid cmd_publisher(int, int, int)[m[K’:
+[0.849s] [01m[K/home/tjddus/min/minicar_controller/vesc_controller/src/vesc_controller.cpp:197:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::msg[m[K’ has not been declared
+[0.850s]   197 |     std::[01;31m[Kmsg[m[K::Float64 accel_msg;
+[0.850s]       |          [01;31m[K^~~[m[K
+[0.850s] [01m[K/home/tjddus/min/minicar_controller/vesc_controller/src/vesc_controller.cpp:198:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::msg[m[K’ has not been declared
+[0.850s]   198 |     std::[01;31m[Kmsg[m[K::Float64 steer_msg;
+[0.850s]       |          [01;31m[K^~~[m[K
+[0.850s] [01m[K/home/tjddus/min/minicar_controller/vesc_controller/src/vesc_controller.cpp:199:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::msg[m[K’ has not been declared
+[0.850s]   199 |     std::[01;31m[Kmsg[m[K::Float64 brake_msg;
+[0.850s]       |          [01;31m[K^~~[m[K
+[0.850s] [01m[K/home/tjddus/min/minicar_controller/vesc_controller/src/vesc_controller.cpp:200:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kaccel_msg[m[K’ was not declared in this scope
+[0.850s]   200 |     [01;31m[Kaccel_msg[m[K.data = cur_accel_arg;
+[0.850s]       |     [01;31m[K^~~~~~~~~[m[K
+[0.851s] [01m[K/home/tjddus/min/minicar_controller/vesc_controller/src/vesc_controller.cpp:201:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ksteer_msg[m[K’ was not declared in this scope
+[0.851s]   201 |     [01;31m[Ksteer_msg[m[K.data = cur_steer_arg;
+[0.851s]       |     [01;31m[K^~~~~~~~~[m[K
+[0.852s] [01m[K/home/tjddus/min/minicar_controller/vesc_controller/src/vesc_controller.cpp:202:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kbrake_msg[m[K’ was not declared in this scope
+[0.852s]   202 |     [01;31m[Kbrake_msg[m[K.data = cur_brake_arg;
+[0.852s]       |     [01;31m[K^~~~~~~~~[m[K
+[0.853s] [01m[K/home/tjddus/min/minicar_controller/vesc_controller/src/vesc_controller.cpp:204:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kaccel_pub[m[K’ was not declared in this scope
+[0.853s]   204 |     [01;31m[Kaccel_pub[m[K->publish(accel_msg);
+[0.853s]       |     [01;31m[K^~~~~~~~~[m[K
+[0.855s] [01m[K/home/tjddus/min/minicar_controller/vesc_controller/src/vesc_controller.cpp:205:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ksteer_pub[m[K’ was not declared in this scope
+[0.855s]   205 |     [01;31m[Ksteer_pub[m[K->publish(steer_msg);
+[0.855s]       |     [01;31m[K^~~~~~~~~[m[K
+[0.856s] [01m[K/home/tjddus/min/minicar_controller/vesc_controller/src/vesc_controller.cpp:207:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kbrake_pub[m[K’ was not declared in this scope
+[0.856s]   207 |         [01;31m[Kbrake_pub[m[K->publish(brake_msg);
+[0.856s]       |         [01;31m[K^~~~~~~~~[m[K
+[1.387s] make[2]: *** [CMakeFiles/VescController.dir/build.make:63: CMakeFiles/VescController.dir/src/vesc_controller.cpp.o] Error 1
+[1.387s] make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/VescController.dir/all] Error 2
+[1.387s] make: *** [Makefile:141: all] Error 2
+[1.389s] Invoked command in '/home/tjddus/min/minicar_controller/vesc_controller/build/vesc_controller' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/tjddus/min/minicar_controller/vesc_controller/build/vesc_controller -- -j20 -l20

@@ -1,0 +1,15 @@
+[0.012s] Invoking command in '/home/tjddus/min/minicar_controller/vesc_controller/build/vesc_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/tjddus/min/minicar_controller/vesc_controller/build/vesc_controller -- -j20 -l20
+[0.031s] [35m[1mScanning dependencies of target VescController[0m
+[0.045s] [ 25%] [32mBuilding CXX object CMakeFiles/VescController.dir/src/vesc_controller.cpp.o[0m
+[0.701s] [01m[K/home/tjddus/min/minicar_controller/vesc_controller/src/vesc_controller.cpp:[m[K In member function ‘[01m[Kvoid VescController::SocketSetting()[m[K’:
+[0.701s] [01m[K/home/tjddus/min/minicar_controller/vesc_controller/src/vesc_controller.cpp:60:12:[m[K [01;31m[Kerror: [m[Kincompatible types in assignment of ‘[01m[Kconst char [5][m[K’ to ‘[01m[Kchar [6][m[K’
+[0.701s]    60 |     port = [01;31m[K"9000"[m[K
+[0.701s]       |            [01;31m[K^~~~~~[m[K
+[0.701s] [01m[K/home/tjddus/min/minicar_controller/vesc_controller/src/vesc_controller.cpp:[m[K In member function ‘[01m[Kvoid VescController::ReceiveKey()[m[K’:
+[0.701s] [01m[K/home/tjddus/min/minicar_controller/vesc_controller/src/vesc_controller.cpp:106:18:[m[K [01;35m[Kwarning: [m[Kvalue computed is not used [[01;35m[K-Wunused-value[m[K]
+[0.701s]   106 |         [01;35m[Kread_chk == read(client_sock, r_buff, 1)[m[K;
+[0.701s]       |         [01;35m[K~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.158s] make[2]: *** [CMakeFiles/VescController.dir/build.make:63: CMakeFiles/VescController.dir/src/vesc_controller.cpp.o] Error 1
+[1.158s] make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/VescController.dir/all] Error 2
+[1.159s] make: *** [Makefile:141: all] Error 2
+[1.160s] Invoked command in '/home/tjddus/min/minicar_controller/vesc_controller/build/vesc_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/tjddus/min/minicar_controller/vesc_controller/build/vesc_controller -- -j20 -l20

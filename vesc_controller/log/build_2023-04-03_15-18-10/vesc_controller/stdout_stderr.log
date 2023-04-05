@@ -1,0 +1,72 @@
+[35m[1mScanning dependencies of target VescController[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/VescController.dir/src/vesc_controller.cpp.o[0m
+[01m[K/home/tjddus/min/minicar_controller/vesc_controller/src/vesc_controller.cpp:101:40:[m[K [01;31m[Kerror: [m[Kcannot declare member function ‘[01m[Kstatic void VescController::ReceiveKey()[m[K’ to have static linkage [[01;31m[K-fpermissive[m[K]
+  101 | static void VescController::ReceiveKey([01;31m[K)[m[K
+      |                                        [01;31m[K^[m[K
+[01m[K/home/tjddus/min/minicar_controller/vesc_controller/src/vesc_controller.cpp:[m[K In static member function ‘[01m[Kstatic void VescController::ReceiveKey()[m[K’:
+[01m[K/home/tjddus/min/minicar_controller/vesc_controller/src/vesc_controller.cpp:104:16:[m[K [01;31m[Kerror: [m[Kinvalid use of member ‘[01m[KVescController::r_buff[m[K’ in static member function
+  104 |         memset([01;31m[Kr_buff[m[K, 0 ,256);
+      |                [01;31m[K^~~~~~[m[K
+In file included from [01m[K/home/tjddus/min/minicar_controller/vesc_controller/src/vesc_controller.cpp:1[m[K:
+[01m[K/home/tjddus/min/minicar_controller/vesc_controller/include/vesc_controller/vesc_controller.hpp:37:14:[m[K [01;36m[Knote: [m[Kdeclared here
+   37 |         char [01;36m[Kr_buff[m[K[256];
+      |              [01;36m[K^~~~~~[m[K
+[01m[K/home/tjddus/min/minicar_controller/vesc_controller/src/vesc_controller.cpp:106:26:[m[K [01;31m[Kerror: [m[Kinvalid use of member ‘[01m[KVescController::client_sock[m[K’ in static member function
+  106 |         read_chk == read([01;31m[Kclient_sock[m[K, r_buff, 1);
+      |                          [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/home/tjddus/min/minicar_controller/vesc_controller/src/vesc_controller.cpp:1[m[K:
+[01m[K/home/tjddus/min/minicar_controller/vesc_controller/include/vesc_controller/vesc_controller.hpp:36:13:[m[K [01;36m[Knote: [m[Kdeclared here
+   36 |         int [01;36m[Kclient_sock[m[K;
+      |             [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/home/tjddus/min/minicar_controller/vesc_controller/src/vesc_controller.cpp:106:39:[m[K [01;31m[Kerror: [m[Kinvalid use of member ‘[01m[KVescController::r_buff[m[K’ in static member function
+  106 |         read_chk == read(client_sock, [01;31m[Kr_buff[m[K, 1);
+      |                                       [01;31m[K^~~~~~[m[K
+In file included from [01m[K/home/tjddus/min/minicar_controller/vesc_controller/src/vesc_controller.cpp:1[m[K:
+[01m[K/home/tjddus/min/minicar_controller/vesc_controller/include/vesc_controller/vesc_controller.hpp:37:14:[m[K [01;36m[Knote: [m[Kdeclared here
+   37 |         char [01;36m[Kr_buff[m[K[256];
+      |              [01;36m[K^~~~~~[m[K
+[01m[K/home/tjddus/min/minicar_controller/vesc_controller/src/vesc_controller.cpp:112:13:[m[K [01;31m[Kerror: [m[Kinvalid use of member ‘[01m[KVescController::r_buff[m[K’ in static member function
+  112 |             [01;31m[Kr_buff[m[K[strlen(r_buff)] = '\n';
+      |             [01;31m[K^~~~~~[m[K
+In file included from [01m[K/home/tjddus/min/minicar_controller/vesc_controller/src/vesc_controller.cpp:1[m[K:
+[01m[K/home/tjddus/min/minicar_controller/vesc_controller/include/vesc_controller/vesc_controller.hpp:37:14:[m[K [01;36m[Knote: [m[Kdeclared here
+   37 |         char [01;36m[Kr_buff[m[K[256];
+      |              [01;36m[K^~~~~~[m[K
+[01m[K/home/tjddus/min/minicar_controller/vesc_controller/src/vesc_controller.cpp:112:27:[m[K [01;31m[Kerror: [m[Kinvalid use of member ‘[01m[KVescController::r_buff[m[K’ in static member function
+  112 |             r_buff[strlen([01;31m[Kr_buff[m[K)] = '\n';
+      |                           [01;31m[K^~~~~~[m[K
+In file included from [01m[K/home/tjddus/min/minicar_controller/vesc_controller/src/vesc_controller.cpp:1[m[K:
+[01m[K/home/tjddus/min/minicar_controller/vesc_controller/include/vesc_controller/vesc_controller.hpp:37:14:[m[K [01;36m[Knote: [m[Kdeclared here
+   37 |         char [01;36m[Kr_buff[m[K[256];
+      |              [01;36m[K^~~~~~[m[K
+[01m[K/home/tjddus/min/minicar_controller/vesc_controller/src/vesc_controller.cpp:115:9:[m[K [01;31m[Kerror: [m[Kinvalid use of member ‘[01m[KVescController::r_key[m[K’ in static member function
+  115 |         [01;31m[Kr_key[m[K = r_buff[0];
+      |         [01;31m[K^~~~~[m[K
+In file included from [01m[K/home/tjddus/min/minicar_controller/vesc_controller/src/vesc_controller.cpp:1[m[K:
+[01m[K/home/tjddus/min/minicar_controller/vesc_controller/include/vesc_controller/vesc_controller.hpp:38:14:[m[K [01;36m[Knote: [m[Kdeclared here
+   38 |         char [01;36m[Kr_key[m[K;
+      |              [01;36m[K^~~~~[m[K
+[01m[K/home/tjddus/min/minicar_controller/vesc_controller/src/vesc_controller.cpp:115:17:[m[K [01;31m[Kerror: [m[Kinvalid use of member ‘[01m[KVescController::r_buff[m[K’ in static member function
+  115 |         r_key = [01;31m[Kr_buff[m[K[0];
+      |                 [01;31m[K^~~~~~[m[K
+In file included from [01m[K/home/tjddus/min/minicar_controller/vesc_controller/src/vesc_controller.cpp:1[m[K:
+[01m[K/home/tjddus/min/minicar_controller/vesc_controller/include/vesc_controller/vesc_controller.hpp:37:14:[m[K [01;36m[Knote: [m[Kdeclared here
+   37 |         char [01;36m[Kr_buff[m[K[256];
+      |              [01;36m[K^~~~~~[m[K
+[01m[K/home/tjddus/min/minicar_controller/vesc_controller/src/vesc_controller.cpp:116:40:[m[K [01;31m[Kerror: [m[Kinvalid use of member ‘[01m[KVescController::r_key[m[K’ in static member function
+  116 |         std::cout<<"received key : "<< [01;31m[Kr_key[m[K <<std::endl;
+      |                                        [01;31m[K^~~~~[m[K
+In file included from [01m[K/home/tjddus/min/minicar_controller/vesc_controller/src/vesc_controller.cpp:1[m[K:
+[01m[K/home/tjddus/min/minicar_controller/vesc_controller/include/vesc_controller/vesc_controller.hpp:38:14:[m[K [01;36m[Knote: [m[Kdeclared here
+   38 |         char [01;36m[Kr_key[m[K;
+      |              [01;36m[K^~~~~[m[K
+[01m[K/home/tjddus/min/minicar_controller/vesc_controller/src/vesc_controller.cpp:118:20:[m[K [01;31m[Kerror: [m[Kinvalid use of member ‘[01m[KVescController::r_key[m[K’ in static member function
+  118 |         keyHandler([01;31m[Kr_key[m[K);
+      |                    [01;31m[K^~~~~[m[K
+In file included from [01m[K/home/tjddus/min/minicar_controller/vesc_controller/src/vesc_controller.cpp:1[m[K:
+[01m[K/home/tjddus/min/minicar_controller/vesc_controller/include/vesc_controller/vesc_controller.hpp:38:14:[m[K [01;36m[Knote: [m[Kdeclared here
+   38 |         char [01;36m[Kr_key[m[K;
+      |              [01;36m[K^~~~~[m[K
+make[2]: *** [CMakeFiles/VescController.dir/build.make:63: CMakeFiles/VescController.dir/src/vesc_controller.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/VescController.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

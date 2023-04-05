@@ -1,0 +1,8 @@
+[01m[K/home/tjddus/min/minicar_controller/vesc_controller/src/vesc_controller.cpp:[m[K In member function ‘[01m[Kvoid VescController::ReceiveKey()[m[K’:
+[01m[K/home/tjddus/min/minicar_controller/vesc_controller/src/vesc_controller.cpp:104:18:[m[K [01;35m[Kwarning: [m[Kvalue computed is not used [[01;35m[K-Wunused-value[m[K]
+  104 |         [01;35m[Kread_chk == read(client_sock, r_buff, 1)[m[K;
+      |         [01;35m[K~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/tjddus/min/minicar_controller/vesc_controller/src/vesc_controller.cpp:[m[K In member function ‘[01m[Kvoid VescController::cmd_creator(int, int, int)[m[K’:
+[01m[K/home/tjddus/min/minicar_controller/vesc_controller/src/vesc_controller.cpp:186:58:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksteer_hitCount[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  186 | void VescController::cmd_creator(int accel_hitCount, [01;35m[Kint steer_hitCount[m[K, int brake_hitCount)
+      |                                                      [01;35m[K~~~~^~~~~~~~~~~~~~[m[K

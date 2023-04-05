@@ -1,0 +1,4 @@
+[ 50%] Built target VescController
+[35m[1mScanning dependencies of target VescController_node[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/VescController_node.dir/src/vesc_controller_node.cpp.o[0m
+[100%] [32m[1mLinking CXX executable VescController_node[0m

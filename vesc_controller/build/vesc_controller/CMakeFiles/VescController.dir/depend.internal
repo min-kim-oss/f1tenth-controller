@@ -275,6 +275,10 @@ CMakeFiles/VescController.dir/src/vesc_controller.cpp.o
  /opt/ros/foxy/include/statistics_msgs/msg/detail/metrics_message__traits.hpp
  /opt/ros/foxy/include/statistics_msgs/msg/detail/statistic_data_point__struct.hpp
  /opt/ros/foxy/include/statistics_msgs/msg/metrics_message.hpp
+ /opt/ros/foxy/include/std_msgs/msg/detail/float64__builder.hpp
+ /opt/ros/foxy/include/std_msgs/msg/detail/float64__struct.hpp
+ /opt/ros/foxy/include/std_msgs/msg/detail/float64__traits.hpp
+ /opt/ros/foxy/include/std_msgs/msg/float64.hpp
  /opt/ros/foxy/include/tracetools/config.h
  /opt/ros/foxy/include/tracetools/tracetools.h
  /opt/ros/foxy/include/tracetools/utils.hpp

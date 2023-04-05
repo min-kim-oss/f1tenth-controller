@@ -1,0 +1,17 @@
+[35m[1mScanning dependencies of target VescController[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/VescController.dir/src/vesc_controller.cpp.o[0m
+[01m[K/home/tjddus/min/minicar_controller/vesc_controller/src/vesc_controller.cpp:[m[K In constructor ‘[01m[KVescController::VescController(const rclcpp::NodeOptions&)[m[K’:
+[01m[K/home/tjddus/min/minicar_controller/vesc_controller/src/vesc_controller.cpp:43:20:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[Kvoid VescController::ReceiveKey()[m[K’
+   43 |     std::thread t1([01;31m[KReceiveKey[m[K);
+      |                    [01;31m[K^~~~~~~~~~[m[K
+In file included from [01m[K/home/tjddus/min/minicar_controller/vesc_controller/src/vesc_controller.cpp:1[m[K:
+[01m[K/home/tjddus/min/minicar_controller/vesc_controller/include/vesc_controller/vesc_controller.hpp:70:14:[m[K [01;36m[Knote: [m[Kdeclared here
+   70 |         void [01;36m[KReceiveKey[m[K();
+      |              [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/tjddus/min/minicar_controller/vesc_controller/src/vesc_controller.cpp:[m[K In member function ‘[01m[Kvoid VescController::ReceiveKey()[m[K’:
+[01m[K/home/tjddus/min/minicar_controller/vesc_controller/src/vesc_controller.cpp:106:18:[m[K [01;35m[Kwarning: [m[Kvalue computed is not used [[01;35m[K-Wunused-value[m[K]
+  106 |         [01;35m[Kread_chk == read(client_sock, r_buff, 1)[m[K;
+      |         [01;35m[K~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/VescController.dir/build.make:63: CMakeFiles/VescController.dir/src/vesc_controller.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/VescController.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2
