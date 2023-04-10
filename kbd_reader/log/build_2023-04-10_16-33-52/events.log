@@ -1,0 +1,103 @@
+[0.000000] (-) TimerEvent: {}
+[0.003903] (kbd_reader) JobQueued: {'identifier': 'kbd_reader', 'dependencies': OrderedDict()}
+[0.004072] (kbd_reader) JobStarted: {'identifier': 'kbd_reader'}
+[0.027629] (kbd_reader) JobProgress: {'identifier': 'kbd_reader', 'progress': 'cmake'}
+[0.027805] (kbd_reader) JobProgress: {'identifier': 'kbd_reader', 'progress': 'build'}
+[0.027863] (kbd_reader) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/tjddus/min/minicar_controller/kbd_reader/build/kbd_reader', '--', '-j20', '-l20'], 'cwd': '/home/tjddus/min/minicar_controller/kbd_reader/build/kbd_reader', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US'), ('USER', 'tjddus'), ('LC_TIME', 'ko_KR.UTF-8'), ('SSH_AGENT_PID', '1942'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/tjddus'), ('OLDPWD', '/home/tjddus/min/minicar_controller'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '1798'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=82c200202acf8246d6483753642a5871'), ('COLORTERM', 'truecolor'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/tjddus/min/minicar_controller/kbd_reader/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'tjddus'), ('JOURNAL_STREAM', '8:55555'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/home/tjddus/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/msi:@/tmp/.ICE-unix/1990,unix/msi:/tmp/.ICE-unix/1990'), ('GDM_LANG', 'en_US'), ('INVOCATION_ID', 'd61803466cca482c9815994b1ba785ca'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('TILIX_ID', '3509b1f2-670e-40d7-937f-30d06e52cb7e'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/home/tjddus/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('XDG_GREETER_DATA_DIR', '/var/lib/lightdm-data/tjddus'), ('AMENT_PREFIX_PATH', '/home/tjddus/min/minicar_controller/kbd_reader/install/kbd_reader:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/tjddus/min/minicar_controller/kbd_reader/build/kbd_reader'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=82c200202acf8246d6483753642a5871'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/tjddus/min/minicar_controller/kbd_reader/install/kbd_reader:/opt/ros/foxy')]), 'shell': False}
+[0.083497] (kbd_reader) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target KbdReader\x1b[0m\n'}
+[0.099558] (-) TimerEvent: {}
+[0.116665] (kbd_reader) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/KbdReader.dir/src/kbd_reader.cpp.o\x1b[0m\n'}
+[0.203540] (-) TimerEvent: {}
+[0.304566] (-) TimerEvent: {}
+[0.404984] (-) TimerEvent: {}
+[0.505421] (-) TimerEvent: {}
+[0.605899] (-) TimerEvent: {}
+[0.706391] (-) TimerEvent: {}
+[0.806785] (-) TimerEvent: {}
+[0.907141] (-) TimerEvent: {}
+[1.007500] (-) TimerEvent: {}
+[1.107844] (-) TimerEvent: {}
+[1.208250] (-) TimerEvent: {}
+[1.308848] (-) TimerEvent: {}
+[1.409251] (-) TimerEvent: {}
+[1.509653] (-) TimerEvent: {}
+[1.610078] (-) TimerEvent: {}
+[1.711535] (-) TimerEvent: {}
+[1.812068] (-) TimerEvent: {}
+[1.912621] (-) TimerEvent: {}
+[2.013042] (-) TimerEvent: {}
+[2.070789] (kbd_reader) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tjddus/min/minicar_controller/kbd_reader/src/kbd_reader.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid KbdReader::key_sending(char)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.071029] (kbd_reader) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tjddus/min/minicar_controller/kbd_reader/src/kbd_reader.cpp:90:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kvariable \xe2\x80\x98\x1b[01m\x1b[Kwrite_check\x1b[m\x1b[K\xe2\x80\x99 set but not used [\x1b[01;35m\x1b[K-Wunused-but-set-variable\x1b[m\x1b[K]\n'}
+[2.071108] (kbd_reader) StderrLine: {'line': b'   90 |     int \x1b[01;35m\x1b[Kwrite_check\x1b[m\x1b[K = 0;\n'}
+[2.071168] (kbd_reader) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.113146] (-) TimerEvent: {}
+[2.213528] (-) TimerEvent: {}
+[2.313945] (-) TimerEvent: {}
+[2.414383] (-) TimerEvent: {}
+[2.514716] (-) TimerEvent: {}
+[2.615061] (-) TimerEvent: {}
+[2.630489] (kbd_reader) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking CXX shared library libKbdReader.so\x1b[0m\n'}
+[2.715189] (-) TimerEvent: {}
+[2.761915] (kbd_reader) StdoutLine: {'line': b'[ 50%] Built target KbdReader\n'}
+[2.786215] (kbd_reader) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target KbdReader_node\x1b[0m\n'}
+[2.815504] (-) TimerEvent: {}
+[2.820875] (kbd_reader) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/KbdReader_node.dir/src/kbd_reader_node.cpp.o\x1b[0m\n'}
+[2.917139] (-) TimerEvent: {}
+[3.017559] (-) TimerEvent: {}
+[3.119557] (-) TimerEvent: {}
+[3.223558] (-) TimerEvent: {}
+[3.327557] (-) TimerEvent: {}
+[3.430865] (-) TimerEvent: {}
+[3.531288] (-) TimerEvent: {}
+[3.635570] (-) TimerEvent: {}
+[3.738227] (-) TimerEvent: {}
+[3.839545] (-) TimerEvent: {}
+[3.943559] (-) TimerEvent: {}
+[4.045602] (-) TimerEvent: {}
+[4.146074] (-) TimerEvent: {}
+[4.246491] (-) TimerEvent: {}
+[4.347032] (-) TimerEvent: {}
+[4.447908] (-) TimerEvent: {}
+[4.465872] (kbd_reader) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tjddus/min/minicar_controller/kbd_reader/src/kbd_reader_node.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid quit(int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.466208] (kbd_reader) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tjddus/min/minicar_controller/kbd_reader/src/kbd_reader_node.cpp:7:15:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ksig\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[4.466335] (kbd_reader) StderrLine: {'line': b'    7 | void quit(\x1b[01;35m\x1b[Kint sig\x1b[m\x1b[K)\n'}
+[4.466412] (kbd_reader) StderrLine: {'line': b'      |           \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[4.551575] (-) TimerEvent: {}
+[4.652084] (-) TimerEvent: {}
+[4.754806] (-) TimerEvent: {}
+[4.855284] (-) TimerEvent: {}
+[4.955801] (-) TimerEvent: {}
+[5.056294] (-) TimerEvent: {}
+[5.089443] (kbd_reader) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable KbdReader_node\x1b[0m\n'}
+[5.157446] (-) TimerEvent: {}
+[5.253064] (kbd_reader) StdoutLine: {'line': b'[100%] Built target KbdReader_node\n'}
+[5.257736] (-) TimerEvent: {}
+[5.273672] (kbd_reader) CommandEnded: {'returncode': 0}
+[5.357919] (-) TimerEvent: {}
+[5.449933] (kbd_reader) JobProgress: {'identifier': 'kbd_reader', 'progress': 'install'}
+[5.458033] (-) TimerEvent: {}
+[5.465629] (kbd_reader) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/tjddus/min/minicar_controller/kbd_reader/build/kbd_reader'], 'cwd': '/home/tjddus/min/minicar_controller/kbd_reader/build/kbd_reader', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US'), ('USER', 'tjddus'), ('LC_TIME', 'ko_KR.UTF-8'), ('SSH_AGENT_PID', '1942'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/tjddus'), ('OLDPWD', '/home/tjddus/min/minicar_controller'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '1798'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=82c200202acf8246d6483753642a5871'), ('COLORTERM', 'truecolor'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/tjddus/min/minicar_controller/kbd_reader/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'tjddus'), ('JOURNAL_STREAM', '8:55555'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/home/tjddus/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/msi:@/tmp/.ICE-unix/1990,unix/msi:/tmp/.ICE-unix/1990'), ('GDM_LANG', 'en_US'), ('INVOCATION_ID', 'd61803466cca482c9815994b1ba785ca'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('TILIX_ID', '3509b1f2-670e-40d7-937f-30d06e52cb7e'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/home/tjddus/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('XDG_GREETER_DATA_DIR', '/var/lib/lightdm-data/tjddus'), ('AMENT_PREFIX_PATH', '/home/tjddus/min/minicar_controller/kbd_reader/install/kbd_reader:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/tjddus/min/minicar_controller/kbd_reader/build/kbd_reader'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=82c200202acf8246d6483753642a5871'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/tjddus/min/minicar_controller/kbd_reader/install/kbd_reader:/opt/ros/foxy')]), 'shell': False}
+[5.484234] (kbd_reader) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[5.484567] (kbd_reader) StdoutLine: {'line': b'-- Installing: /home/tjddus/min/minicar_controller/kbd_reader/install/kbd_reader/lib/kbd_reader/libKbdReader.so\n'}
+[5.484655] (kbd_reader) StdoutLine: {'line': b'-- Set runtime path of "/home/tjddus/min/minicar_controller/kbd_reader/install/kbd_reader/lib/kbd_reader/libKbdReader.so" to ""\n'}
+[5.484729] (kbd_reader) StdoutLine: {'line': b'-- Installing: /home/tjddus/min/minicar_controller/kbd_reader/install/kbd_reader/lib/kbd_reader/KbdReader_node\n'}
+[5.484794] (kbd_reader) StdoutLine: {'line': b'-- Set runtime path of "/home/tjddus/min/minicar_controller/kbd_reader/install/kbd_reader/lib/kbd_reader/KbdReader_node" to ""\n'}
+[5.484856] (kbd_reader) StdoutLine: {'line': b'-- Up-to-date: /home/tjddus/min/minicar_controller/kbd_reader/install/kbd_reader/share/ament_index/resource_index/package_run_dependencies/kbd_reader\n'}
+[5.484926] (kbd_reader) StdoutLine: {'line': b'-- Up-to-date: /home/tjddus/min/minicar_controller/kbd_reader/install/kbd_reader/share/ament_index/resource_index/parent_prefix_path/kbd_reader\n'}
+[5.484989] (kbd_reader) StdoutLine: {'line': b'-- Up-to-date: /home/tjddus/min/minicar_controller/kbd_reader/install/kbd_reader/share/kbd_reader/environment/ament_prefix_path.sh\n'}
+[5.485050] (kbd_reader) StdoutLine: {'line': b'-- Up-to-date: /home/tjddus/min/minicar_controller/kbd_reader/install/kbd_reader/share/kbd_reader/environment/ament_prefix_path.dsv\n'}
+[5.485111] (kbd_reader) StdoutLine: {'line': b'-- Up-to-date: /home/tjddus/min/minicar_controller/kbd_reader/install/kbd_reader/share/kbd_reader/environment/path.sh\n'}
+[5.485168] (kbd_reader) StdoutLine: {'line': b'-- Up-to-date: /home/tjddus/min/minicar_controller/kbd_reader/install/kbd_reader/share/kbd_reader/environment/path.dsv\n'}
+[5.485236] (kbd_reader) StdoutLine: {'line': b'-- Up-to-date: /home/tjddus/min/minicar_controller/kbd_reader/install/kbd_reader/share/kbd_reader/local_setup.bash\n'}
+[5.485297] (kbd_reader) StdoutLine: {'line': b'-- Up-to-date: /home/tjddus/min/minicar_controller/kbd_reader/install/kbd_reader/share/kbd_reader/local_setup.sh\n'}
+[5.485358] (kbd_reader) StdoutLine: {'line': b'-- Up-to-date: /home/tjddus/min/minicar_controller/kbd_reader/install/kbd_reader/share/kbd_reader/local_setup.zsh\n'}
+[5.485417] (kbd_reader) StdoutLine: {'line': b'-- Up-to-date: /home/tjddus/min/minicar_controller/kbd_reader/install/kbd_reader/share/kbd_reader/local_setup.dsv\n'}
+[5.485483] (kbd_reader) StdoutLine: {'line': b'-- Installing: /home/tjddus/min/minicar_controller/kbd_reader/install/kbd_reader/share/kbd_reader/package.dsv\n'}
+[5.485553] (kbd_reader) StdoutLine: {'line': b'-- Up-to-date: /home/tjddus/min/minicar_controller/kbd_reader/install/kbd_reader/share/ament_index/resource_index/packages/kbd_reader\n'}
+[5.485617] (kbd_reader) StdoutLine: {'line': b'-- Up-to-date: /home/tjddus/min/minicar_controller/kbd_reader/install/kbd_reader/share/kbd_reader/cmake/kbd_readerConfig.cmake\n'}
+[5.485677] (kbd_reader) StdoutLine: {'line': b'-- Up-to-date: /home/tjddus/min/minicar_controller/kbd_reader/install/kbd_reader/share/kbd_reader/cmake/kbd_readerConfig-version.cmake\n'}
+[5.485735] (kbd_reader) StdoutLine: {'line': b'-- Up-to-date: /home/tjddus/min/minicar_controller/kbd_reader/install/kbd_reader/share/kbd_reader/package.xml\n'}
+[5.500072] (kbd_reader) CommandEnded: {'returncode': 0}
+[5.558232] (-) TimerEvent: {}
+[5.588034] (kbd_reader) JobEnded: {'identifier': 'kbd_reader', 'rc': 0}
+[5.589268] (-) EventReactorShutdown: {}

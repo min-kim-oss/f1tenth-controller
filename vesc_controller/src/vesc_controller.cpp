@@ -133,14 +133,14 @@ void VescController::keyHandler(char r_key){
             break;
         case KEYCODE_A:
             std::cout << "a key" << std::endl;
-            if(steer_hitCount - hit_increment > -max_hit_count){
-                steer_hitCount -= hit_increment;
+            if(steer_hitCount - (2 * hit_increment) > -max_hit_count){
+                steer_hitCount -= (2 * hit_increment);
             }
             break;
         case KEYCODE_D:
             std::cout << "d key" << std::endl;
-            if(steer_hitCount + hit_increment < max_hit_count){
-                steer_hitCount += hit_increment;
+            if(steer_hitCount + (2 * hit_increment) < max_hit_count){
+                steer_hitCount += (2 * hit_increment);
             }
             break;
     }
@@ -166,11 +166,11 @@ void VescController::hitRecoverer()
     //recovering steer hit count
     if(steer_hitCount > hit_increment)
     {
-        steer_hitCount -= hit_increment;        
+        steer_hitCount -= (2 * hit_increment);        
     }
     else if(steer_hitCount < -hit_increment)
     {
-        steer_hitCount += hit_increment;
+        steer_hitCount += (2 * hit_increment);
     }
     else
     {

@@ -1,0 +1,3 @@
+[ 50%] Built target KbdReader
+[35m[1mScanning dependencies of target KbdReader_node[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/KbdReader_node.dir/src/kbd_reader_node.cpp.o[0m

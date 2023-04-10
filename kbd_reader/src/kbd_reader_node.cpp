@@ -4,6 +4,16 @@
 
 using namespace std;
 
+struct termios cooked, raw;
+
+void quit(int sig)
+{
+    tcsetattr(0, TCSANOW, &cooked);
+    rclcpp::shutdown();
+    exit(0);
+}
+
+
 int main(int argc, char** argv)
 {
     char port[6];
@@ -15,7 +25,9 @@ int main(int argc, char** argv)
 
     rclcpp::init(argc,argv);
     auto node = rclcpp::Node::make_shared("kbd_reader");
-    KbdReader kbdReader(node, ip, port);
+    KbdReader kbdReader(node, ip, port, &cooked, &raw);
+
+    signal(SIGINT,quit);
 
     kbdReader.keyLoop();
 

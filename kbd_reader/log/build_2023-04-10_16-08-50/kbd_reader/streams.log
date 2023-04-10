@@ -1,0 +1,19 @@
+[0.042s] Invoking command in '/home/tjddus/min/minicar_controller/kbd_reader/build/kbd_reader': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/tjddus/min/minicar_controller/kbd_reader/build/kbd_reader -- -j20 -l20
+[0.133s] [35m[1mScanning dependencies of target KbdReader[0m
+[0.180s] [ 25%] [32mBuilding CXX object CMakeFiles/KbdReader.dir/src/kbd_reader.cpp.o[0m
+[3.429s] [01m[K/home/tjddus/min/minicar_controller/kbd_reader/src/kbd_reader.cpp:[m[K In member function ‘[01m[Kvoid KbdReader::key_sending(char)[m[K’:
+[3.429s] [01m[K/home/tjddus/min/minicar_controller/kbd_reader/src/kbd_reader.cpp:94:9:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kwrite_check[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+[3.429s]    94 |     int [01;35m[Kwrite_check[m[K = 0;
+[3.429s]       |         [01;35m[K^~~~~~~~~~~[m[K
+[4.402s] [ 50%] [32m[1mLinking CXX shared library libKbdReader.so[0m
+[4.649s] [ 50%] Built target KbdReader
+[4.672s] [35m[1mScanning dependencies of target KbdReader_node[0m
+[4.719s] [ 75%] [32mBuilding CXX object CMakeFiles/KbdReader_node.dir/src/kbd_reader_node.cpp.o[0m
+[7.398s] [01m[K/home/tjddus/min/minicar_controller/kbd_reader/src/kbd_reader_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[7.398s] [01m[K/home/tjddus/min/minicar_controller/kbd_reader/src/kbd_reader_node.cpp:20:30:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[Kvoid KbdReader::quit(int)[m[K’
+[7.399s]    20 |     signal(SIGINT,KbdReader::[01;31m[Kquit[m[K);
+[7.399s]       |                              [01;31m[K^~~~[m[K
+[8.212s] make[2]: *** [CMakeFiles/KbdReader_node.dir/build.make:63: CMakeFiles/KbdReader_node.dir/src/kbd_reader_node.cpp.o] Error 1
+[8.212s] make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/KbdReader_node.dir/all] Error 2
+[8.213s] make: *** [Makefile:141: all] Error 2
+[8.218s] Invoked command in '/home/tjddus/min/minicar_controller/kbd_reader/build/kbd_reader' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/tjddus/min/minicar_controller/kbd_reader/build/kbd_reader -- -j20 -l20

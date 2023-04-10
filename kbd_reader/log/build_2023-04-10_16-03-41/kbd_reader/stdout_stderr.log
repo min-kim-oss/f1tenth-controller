@@ -1,0 +1,10 @@
+[ 50%] Built target KbdReader
+[35m[1mScanning dependencies of target KbdReader_node[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/KbdReader_node.dir/src/kbd_reader_node.cpp.o[0m
+[01m[K/home/tjddus/min/minicar_controller/kbd_reader/src/kbd_reader_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/tjddus/min/minicar_controller/kbd_reader/src/kbd_reader_node.cpp:20:34:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kint[m[K’
+   20 |     signal(SIGINT,kbdReader.quit([01;31m[Kint[m[K));
+      |                                  [01;31m[K^~~[m[K
+make[2]: *** [CMakeFiles/KbdReader_node.dir/build.make:63: CMakeFiles/KbdReader_node.dir/src/kbd_reader_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/KbdReader_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

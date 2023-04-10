@@ -31,13 +31,14 @@ class KbdReader
 
         //for reading key code from console
         int kfd;
-        struct termios cooked, raw;
+        struct termios* cooked, raw;
         bool key_dirty;
 
         char w_buff[256];
 
     public:        
-        KbdReader(std::shared_ptr<rclcpp::Node> nh, char* ip, char* port);
+        KbdReader(std::shared_ptr<rclcpp::Node> nh, char* ip, char* port, struct termios*, struct termios*  );
+        ~KbdReader();
         int keyLoop();
         void key_sending(char key);
 };

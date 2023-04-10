@@ -1,0 +1,14 @@
+[01m[K/home/tjddus/min/minicar_controller/kbd_reader/src/kbd_reader_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/tjddus/min/minicar_controller/kbd_reader/src/kbd_reader_node.cpp:21:19:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kvoid (KbdReader::*)(int)[m[K’ to ‘[01m[K__sighandler_t[m[K’ {aka ‘[01m[Kvoid (*)(int)[m[K’}
+   21 |     signal(SIGINT,[01;31m[K&KbdReader::quit[m[K);
+      |                   [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |                   [01;31m[K|[m[K
+      |                   [01;31m[Kvoid (KbdReader::*)(int)[m[K
+In file included from [01m[K/home/tjddus/min/minicar_controller/kbd_reader/include/kbd_reader/kbd_reader.hpp:4[m[K,
+                 from [01m[K/home/tjddus/min/minicar_controller/kbd_reader/src/kbd_reader_node.cpp:3[m[K:
+[01m[K/usr/include/signal.h:88:57:[m[K [01;36m[Knote: [m[K  initializing argument 2 of ‘[01m[Kvoid (* signal(int, __sighandler_t))(int)[m[K’
+   88 | extern __sighandler_t signal (int __sig, [01;36m[K__sighandler_t __handler[m[K)
+      |                                          [01;36m[K~~~~~~~~~~~~~~~^~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/KbdReader_node.dir/build.make:63: CMakeFiles/KbdReader_node.dir/src/kbd_reader_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/KbdReader_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

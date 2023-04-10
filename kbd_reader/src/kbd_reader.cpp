@@ -1,6 +1,6 @@
 #include "kbd_reader/kbd_reader.hpp"
 
-KbdReader::KbdReader(std::shared_ptr<rclcpp::Node> nh, char* ip, char* port) : nh_(nh)
+KbdReader::KbdReader(std::shared_ptr<rclcpp::Node> nh, char* ip, char* port, struct termios* cooked, struct termios* raw) : nh_(nh)
 {
     //setting addr struct
     addr_vehicle = {};
@@ -30,16 +30,21 @@ KbdReader::KbdReader(std::shared_ptr<rclcpp::Node> nh, char* ip, char* port) : n
     //console reading setting
     //get the console in raw mode  
     kfd = 0;
-    tcgetattr(kfd, &cooked);
-    memcpy(&raw, &cooked, sizeof(struct termios));
-    raw.c_lflag &=~ (ICANON | ECHO);
+    tcgetattr(kfd, cooked);
+    memcpy(raw, cooked, sizeof(struct termios));
+    raw->c_lflag &=~ (ICANON | ECHO);
     // Setting a new line, then end of file                         
-    raw.c_cc[VEOL] = 1;
-    raw.c_cc[VEOF] = 2;
-    tcsetattr(kfd, TCSANOW, &raw);
+    raw->c_cc[VEOL] = 1;
+    raw->c_cc[VEOF] = 2;
+    tcsetattr(kfd, TCSANOW, raw);
 
-     std::cout<<"setting colsole reading completed"<<std::endl;
+    std::cout<<"setting colsole reading completed"<<std::endl;
 
+}
+
+KbdReader::~KbdReader()
+{
+    tcsetattr(kfd, TCSANOW, cooked);
 }
 
 int KbdReader::keyLoop()

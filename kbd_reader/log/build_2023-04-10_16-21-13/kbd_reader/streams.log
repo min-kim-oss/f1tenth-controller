@@ -1,0 +1,23 @@
+[0.010s] Invoking command in '/home/tjddus/min/minicar_controller/kbd_reader/build/kbd_reader': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/tjddus/min/minicar_controller/kbd_reader/build/kbd_reader -- -j20 -l20
+[0.033s] [35m[1mScanning dependencies of target KbdReader[0m
+[0.046s] [ 25%] [32mBuilding CXX object CMakeFiles/KbdReader.dir/src/kbd_reader.cpp.o[0m
+[0.708s] [01m[K/home/tjddus/min/minicar_controller/kbd_reader/src/kbd_reader.cpp:[m[K In member function ‘[01m[Kvoid KbdReader::quit(int)[m[K’:
+[0.708s] [01m[K/home/tjddus/min/minicar_controller/kbd_reader/src/kbd_reader.cpp:45:26:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksig[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[0.708s]    45 | void KbdReader::quit([01;35m[Kint sig[m[K)
+[0.708s]       |                      [01;35m[K~~~~^~~[m[K
+[0.708s] [01m[K/home/tjddus/min/minicar_controller/kbd_reader/src/kbd_reader.cpp:[m[K In member function ‘[01m[Kvoid KbdReader::key_sending(char)[m[K’:
+[0.709s] [01m[K/home/tjddus/min/minicar_controller/kbd_reader/src/kbd_reader.cpp:90:9:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kwrite_check[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+[0.709s]    90 |     int [01;35m[Kwrite_check[m[K = 0;
+[0.709s]       |         [01;35m[K^~~~~~~~~~~[m[K
+[0.912s] [ 50%] [32m[1mLinking CXX shared library libKbdReader.so[0m
+[0.968s] [ 50%] Built target KbdReader
+[0.975s] [35m[1mScanning dependencies of target KbdReader_node[0m
+[0.991s] [ 75%] [32mBuilding CXX object CMakeFiles/KbdReader_node.dir/src/kbd_reader_node.cpp.o[0m
+[1.585s] [01m[K/home/tjddus/min/minicar_controller/kbd_reader/src/kbd_reader_node.cpp:[m[K In function ‘[01m[Kvoid quit(int)[m[K’:
+[1.585s] [01m[K/home/tjddus/min/minicar_controller/kbd_reader/src/kbd_reader_node.cpp:9:24:[m[K [01;31m[Kerror: [m[Kcannot call member function ‘[01m[Kvoid KbdReader::quit(int)[m[K’ without object
+[1.585s]     9 |     KbdReader::quit(sig[01;31m[K)[m[K;
+[1.585s]       |                        [01;31m[K^[m[K
+[1.760s] make[2]: *** [CMakeFiles/KbdReader_node.dir/build.make:63: CMakeFiles/KbdReader_node.dir/src/kbd_reader_node.cpp.o] Error 1
+[1.760s] make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/KbdReader_node.dir/all] Error 2
+[1.760s] make: *** [Makefile:141: all] Error 2
+[1.763s] Invoked command in '/home/tjddus/min/minicar_controller/kbd_reader/build/kbd_reader' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/tjddus/min/minicar_controller/kbd_reader/build/kbd_reader -- -j20 -l20

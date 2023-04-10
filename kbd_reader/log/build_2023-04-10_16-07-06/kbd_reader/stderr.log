@@ -1,0 +1,11 @@
+[01m[K/home/tjddus/min/minicar_controller/kbd_reader/src/kbd_reader.cpp:[m[K In constructor ‘[01m[KKbdReader::KbdReader(std::shared_ptr<rclcpp::Node>, char*, char*)[m[K’:
+[01m[K/home/tjddus/min/minicar_controller/kbd_reader/src/kbd_reader.cpp:41:19:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[Kvoid KbdReader::quit(int)[m[K’
+   41 |     signal(SIGINT,[01;31m[Kquit[m[K);
+      |                   [01;31m[K^~~~[m[K
+In file included from [01m[K/home/tjddus/min/minicar_controller/kbd_reader/src/kbd_reader.cpp:1[m[K:
+[01m[K/home/tjddus/min/minicar_controller/kbd_reader/include/kbd_reader/kbd_reader.hpp:41:14:[m[K [01;36m[Knote: [m[Kdeclared here
+   41 |         void [01;36m[Kquit[m[K(int sig);
+      |              [01;36m[K^~~~[m[K
+make[2]: *** [CMakeFiles/KbdReader.dir/build.make:63: CMakeFiles/KbdReader.dir/src/kbd_reader.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:134: CMakeFiles/KbdReader.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2
