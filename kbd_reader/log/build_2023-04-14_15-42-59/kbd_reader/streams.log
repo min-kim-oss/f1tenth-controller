@@ -1,0 +1,24 @@
+[0.009s] Invoking command in '/home/tjddus/min/minicar_controller/kbd_reader/build/kbd_reader': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/tjddus/min/minicar_controller/kbd_reader/build/kbd_reader -- -j20 -l20
+[0.052s] [ 50%] Built target KbdReader
+[0.082s] [100%] Built target KbdReader_node
+[0.092s] Invoked command in '/home/tjddus/min/minicar_controller/kbd_reader/build/kbd_reader' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/tjddus/min/minicar_controller/kbd_reader/build/kbd_reader -- -j20 -l20
+[0.131s] Invoking command in '/home/tjddus/min/minicar_controller/kbd_reader/build/kbd_reader': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/tjddus/min/minicar_controller/kbd_reader/build/kbd_reader
+[0.137s] -- Install configuration: ""
+[0.137s] -- Up-to-date: /home/tjddus/min/minicar_controller/kbd_reader/install/kbd_reader/lib/kbd_reader/libKbdReader.so
+[0.137s] -- Up-to-date: /home/tjddus/min/minicar_controller/kbd_reader/install/kbd_reader/lib/kbd_reader/KbdReader_node
+[0.137s] -- Up-to-date: /home/tjddus/min/minicar_controller/kbd_reader/install/kbd_reader/share/ament_index/resource_index/package_run_dependencies/kbd_reader
+[0.138s] -- Up-to-date: /home/tjddus/min/minicar_controller/kbd_reader/install/kbd_reader/share/ament_index/resource_index/parent_prefix_path/kbd_reader
+[0.138s] -- Up-to-date: /home/tjddus/min/minicar_controller/kbd_reader/install/kbd_reader/share/kbd_reader/environment/ament_prefix_path.sh
+[0.138s] -- Up-to-date: /home/tjddus/min/minicar_controller/kbd_reader/install/kbd_reader/share/kbd_reader/environment/ament_prefix_path.dsv
+[0.138s] -- Up-to-date: /home/tjddus/min/minicar_controller/kbd_reader/install/kbd_reader/share/kbd_reader/environment/path.sh
+[0.138s] -- Up-to-date: /home/tjddus/min/minicar_controller/kbd_reader/install/kbd_reader/share/kbd_reader/environment/path.dsv
+[0.138s] -- Up-to-date: /home/tjddus/min/minicar_controller/kbd_reader/install/kbd_reader/share/kbd_reader/local_setup.bash
+[0.138s] -- Up-to-date: /home/tjddus/min/minicar_controller/kbd_reader/install/kbd_reader/share/kbd_reader/local_setup.sh
+[0.138s] -- Up-to-date: /home/tjddus/min/minicar_controller/kbd_reader/install/kbd_reader/share/kbd_reader/local_setup.zsh
+[0.138s] -- Up-to-date: /home/tjddus/min/minicar_controller/kbd_reader/install/kbd_reader/share/kbd_reader/local_setup.dsv
+[0.138s] -- Installing: /home/tjddus/min/minicar_controller/kbd_reader/install/kbd_reader/share/kbd_reader/package.dsv
+[0.138s] -- Up-to-date: /home/tjddus/min/minicar_controller/kbd_reader/install/kbd_reader/share/ament_index/resource_index/packages/kbd_reader
+[0.138s] -- Up-to-date: /home/tjddus/min/minicar_controller/kbd_reader/install/kbd_reader/share/kbd_reader/cmake/kbd_readerConfig.cmake
+[0.138s] -- Up-to-date: /home/tjddus/min/minicar_controller/kbd_reader/install/kbd_reader/share/kbd_reader/cmake/kbd_readerConfig-version.cmake
+[0.138s] -- Up-to-date: /home/tjddus/min/minicar_controller/kbd_reader/install/kbd_reader/share/kbd_reader/package.xml
+[0.140s] Invoked command in '/home/tjddus/min/minicar_controller/kbd_reader/build/kbd_reader' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/tjddus/min/minicar_controller/kbd_reader/build/kbd_reader

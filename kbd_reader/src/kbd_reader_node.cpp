@@ -30,7 +30,9 @@ int main(int argc, char** argv)
     signal(SIGINT,quit);
 
     kbdReader.keyLoop();
-
-    rclcpp::shutdown();
+    cout<<"closing program"<<endl;
+    quit(0);
+    
+    //rclcpp::shutdown();
     return 0;
 }

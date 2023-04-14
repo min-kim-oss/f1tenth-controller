@@ -45,9 +45,10 @@ KbdReader::KbdReader(std::shared_ptr<rclcpp::Node> nh, char* ip, char* port, str
 KbdReader::~KbdReader()
 {
     tcsetattr(kfd, TCSANOW, cooked);
+    
 }
 
-int KbdReader::keyLoop()
+void KbdReader::keyLoop()
 {
     char c;
     bool key_dirty;
@@ -70,14 +71,20 @@ int KbdReader::keyLoop()
             case KEYCODE_W:
             case KEYCODE_A:
             case KEYCODE_S:
-            case KEYCODE_D:
+            case KEYCODE_D: 
                 key_dirty = true;
                 break;
+            case KEYCODE_Q: 
+                key_dirty = true;
+                    break;
         }
 
         if(key_dirty == true)
         {
             key_sending(c);
+            if (c == KEYCODE_Q){
+                return;
+            }
         }
     }
 

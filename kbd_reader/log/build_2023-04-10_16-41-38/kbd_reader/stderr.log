@@ -1,8 +1,0 @@
-[01m[K/home/tjddus/min/minicar_controller/kbd_reader/src/kbd_reader.cpp:[m[K In member function ‘[01m[Kvoid KbdReader::key_sending(char)[m[K’:
-[01m[K/home/tjddus/min/minicar_controller/kbd_reader/src/kbd_reader.cpp:90:9:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kwrite_check[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
-   90 |     int [01;35m[Kwrite_check[m[K = 0;
-      |         [01;35m[K^~~~~~~~~~~[m[K
-[01m[K/home/tjddus/min/minicar_controller/kbd_reader/src/kbd_reader_node.cpp:[m[K In function ‘[01m[Kvoid quit(int)[m[K’:
-[01m[K/home/tjddus/min/minicar_controller/kbd_reader/src/kbd_reader_node.cpp:9:15:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksig[m[K’ [[01;35m[K-Wunused-parameter[m[K]
-    9 | void quit([01;35m[Kint sig[m[K)
-      |           [01;35m[K~~~~^~~[m[K

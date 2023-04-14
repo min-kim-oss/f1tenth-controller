@@ -19,6 +19,8 @@
 #define KEYCODE_S 0x73
 #define KEYCODE_D 0x64
 
+#define KEYCODE_Q 0x71
+
 
 class KbdReader
 {
@@ -39,6 +41,6 @@ class KbdReader
     public:        
         KbdReader(std::shared_ptr<rclcpp::Node> nh, char* ip, char* port, struct termios*, struct termios*  );
         ~KbdReader();
-        int keyLoop();
+        void keyLoop();
         void key_sending(char key);
 };

@@ -343,9 +343,6 @@ foonathan_memory_DIR:PATH=/opt/ros/foxy/lib/foonathan_memory/cmake
 //Value Computed by CMake
 kbd_reader_BINARY_DIR:STATIC=/home/tjddus/min/minicar_controller/kbd_reader/build/kbd_reader
 
-//Dependencies for the target
-kbd_reader_LIB_DEPENDS:STATIC=general;rclcpp::rclcpp;general;rcl_interfaces::rcl_interfaces__rosidl_generator_c;general;rcl_interfaces::rcl_interfaces__rosidl_typesupport_introspection_c;general;rcl_interfaces::rcl_interfaces__rosidl_typesupport_c;general;rcl_interfaces::rcl_interfaces__rosidl_typesupport_introspection_cpp;general;rcl_interfaces::rcl_interfaces__rosidl_typesupport_cpp;general;std_msgs::std_msgs__rosidl_generator_c;general;std_msgs::std_msgs__rosidl_typesupport_introspection_c;general;std_msgs::std_msgs__rosidl_typesupport_c;general;std_msgs::std_msgs__rosidl_typesupport_introspection_cpp;general;std_msgs::std_msgs__rosidl_typesupport_cpp;
-
 //Value Computed by CMake
 kbd_reader_SOURCE_DIR:STATIC=/home/tjddus/min/minicar_controller/kbd_reader
 
@@ -375,9 +372,6 @@ rcl_yaml_param_parser_DIR:PATH=/opt/ros/foxy/share/rcl_yaml_param_parser/cmake
 
 //The directory containing a CMake configuration file for rclcpp.
 rclcpp_DIR:PATH=/opt/ros/foxy/share/rclcpp/cmake
-
-//The directory containing a CMake configuration file for rclcpp_interfaces.
-rclcpp_interfaces_DIR:PATH=rclcpp_interfaces_DIR-NOTFOUND
 
 //The directory containing a CMake configuration file for rcpputils.
 rcpputils_DIR:PATH=/opt/ros/foxy/share/rcpputils/cmake

@@ -1,0 +1,30 @@
+[35m[1mScanning dependencies of target VescController[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/VescController.dir/src/vesc_controller.cpp.o[0m
+[01m[K/home/tjddus/min/minicar_controller/vesc_controller/src/vesc_controller.cpp:[m[K In member function ‘[01m[Kvoid VescController::ReceiveKey()[m[K’:
+[01m[K/home/tjddus/min/minicar_controller/vesc_controller/src/vesc_controller.cpp:129:18:[m[K [01;35m[Kwarning: [m[Kvalue computed is not used [[01;35m[K-Wunused-value[m[K]
+  129 |         [01;35m[Kread_chk == read(client_sock, r_buff, 1)[m[K;
+      |         [01;35m[K~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[ 50%] [32m[1mLinking CXX shared library libVescController.so[0m
+[ 50%] Built target VescController
+[ 75%] [32m[1mLinking CXX executable VescController_node[0m
+[100%] Built target VescController_node
+-- Install configuration: ""
+-- Installing: /home/tjddus/min/minicar_controller/vesc_controller/install/vesc_controller/lib/vesc_controller/libVescController.so
+-- Set runtime path of "/home/tjddus/min/minicar_controller/vesc_controller/install/vesc_controller/lib/vesc_controller/libVescController.so" to ""
+-- Installing: /home/tjddus/min/minicar_controller/vesc_controller/install/vesc_controller/lib/vesc_controller/VescController_node
+-- Set runtime path of "/home/tjddus/min/minicar_controller/vesc_controller/install/vesc_controller/lib/vesc_controller/VescController_node" to ""
+-- Up-to-date: /home/tjddus/min/minicar_controller/vesc_controller/install/vesc_controller/share/ament_index/resource_index/package_run_dependencies/vesc_controller
+-- Up-to-date: /home/tjddus/min/minicar_controller/vesc_controller/install/vesc_controller/share/ament_index/resource_index/parent_prefix_path/vesc_controller
+-- Up-to-date: /home/tjddus/min/minicar_controller/vesc_controller/install/vesc_controller/share/vesc_controller/environment/ament_prefix_path.sh
+-- Up-to-date: /home/tjddus/min/minicar_controller/vesc_controller/install/vesc_controller/share/vesc_controller/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/tjddus/min/minicar_controller/vesc_controller/install/vesc_controller/share/vesc_controller/environment/path.sh
+-- Up-to-date: /home/tjddus/min/minicar_controller/vesc_controller/install/vesc_controller/share/vesc_controller/environment/path.dsv
+-- Up-to-date: /home/tjddus/min/minicar_controller/vesc_controller/install/vesc_controller/share/vesc_controller/local_setup.bash
+-- Up-to-date: /home/tjddus/min/minicar_controller/vesc_controller/install/vesc_controller/share/vesc_controller/local_setup.sh
+-- Up-to-date: /home/tjddus/min/minicar_controller/vesc_controller/install/vesc_controller/share/vesc_controller/local_setup.zsh
+-- Up-to-date: /home/tjddus/min/minicar_controller/vesc_controller/install/vesc_controller/share/vesc_controller/local_setup.dsv
+-- Installing: /home/tjddus/min/minicar_controller/vesc_controller/install/vesc_controller/share/vesc_controller/package.dsv
+-- Up-to-date: /home/tjddus/min/minicar_controller/vesc_controller/install/vesc_controller/share/ament_index/resource_index/packages/vesc_controller
+-- Up-to-date: /home/tjddus/min/minicar_controller/vesc_controller/install/vesc_controller/share/vesc_controller/cmake/vesc_controllerConfig.cmake
+-- Up-to-date: /home/tjddus/min/minicar_controller/vesc_controller/install/vesc_controller/share/vesc_controller/cmake/vesc_controllerConfig-version.cmake
+-- Up-to-date: /home/tjddus/min/minicar_controller/vesc_controller/install/vesc_controller/share/vesc_controller/package.xml

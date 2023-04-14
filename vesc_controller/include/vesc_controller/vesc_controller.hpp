@@ -22,6 +22,8 @@
 #define KEYCODE_S 0x73
 #define KEYCODE_D 0x64
 
+#define KEYCODE_Q 0x71
+
 #define CONTROL_PERIOD 0.1
 
 class VescController : public rclcpp::Node
@@ -66,7 +68,9 @@ class VescController : public rclcpp::Node
         //~VescController();
 
         void SocketSetter();
-        void SocketSetting();
+        void socketTread();
+        void acceptingClient();
+        
         void ReceiveKey();
         void keyHandler(char r_key);
 

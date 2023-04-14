@@ -1,0 +1,4 @@
+Invoking command in '/home/tjddus/min/minicar_controller/vesc_controller/build/vesc_controller': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/tjddus/min/minicar_controller/vesc_controller/build/vesc_controller -- -j20 -l20
+Invoked command in '/home/tjddus/min/minicar_controller/vesc_controller/build/vesc_controller' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/tjddus/min/minicar_controller/vesc_controller/build/vesc_controller -- -j20 -l20
+Invoking command in '/home/tjddus/min/minicar_controller/vesc_controller/build/vesc_controller': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/tjddus/min/minicar_controller/vesc_controller/build/vesc_controller
+Invoked command in '/home/tjddus/min/minicar_controller/vesc_controller/build/vesc_controller' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/tjddus/min/minicar_controller/vesc_controller/build/vesc_controller

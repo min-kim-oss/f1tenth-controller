@@ -38,20 +38,12 @@ VescController::VescController(const rclcpp::NodeOptions & options)
     addr_server = {};
     addr_client = {};
 
-    std::thread t1(&VescController::SocketSetter, this);
+    std::thread t1(&VescController::socketTread, this);
     t1.detach();
 }
 
 
 void VescController::SocketSetter()
-{
-    while(true){
-        SocketSetting();
-        ReceiveKey();
-    }    
-}
-
-void VescController::SocketSetting()
 {
     char port[6] = "9000";
     //std::cout << "write port for connection : ";
@@ -83,8 +75,20 @@ void VescController::SocketSetting()
         close(server_sock);
         exit(1);
     }
+}
 
+void VescController::socketTread(){
+    SocketSetter();
+    while(true){
+        acceptingClient();
+        ReceiveKey();
+    }    
+}
+
+void VescController::acceptingClient()
+{
     addr_client_len = sizeof(addr_client_len);
+    memset(&addr_client, 0 , sizeof(addr_client));
 
     client_sock = accept(server_sock, (sockaddr*) &addr_client, &addr_client_len);
     if(client_sock == -1){
@@ -112,6 +116,10 @@ void VescController::ReceiveKey()
         }
         r_key = r_buff[0];
         std::cout<<"received key : "<< r_key <<std::endl;
+        if(r_key == 'q'){
+            std::cout<<" close connect "<< std::endl;
+            break;
+        }
 
         keyHandler(r_key);
     }
@@ -185,7 +193,10 @@ void VescController::hitRecoverer()
 
 void VescController::cmd_creator(int accel_hitCount, int steer_hitCount, int brake_hitCount)
 {
-    cur_accel_arg = max_accel_arg * ((float)accel_hitCount / max_hit_count);
+    cur_accel_arg = 2000 + max_accel_arg * ((float)accel_hitCount / max_hit_count);
+    if (cur_accel_arg > 3000){
+        cur_accel_arg = 3000;
+    }
     cur_steer_arg = 0.5 + 0.5 * ((float)steer_hitCount / max_hit_count);
     cur_brake_arg = max_brake_arg * ((float)brake_hitCount / max_hit_count);
     std::cout<<"cur accel : "<< cur_accel_arg <<std::endl;
